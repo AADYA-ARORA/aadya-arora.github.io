@@ -17,7 +17,6 @@
     </ul>
     <h3>Academic Details</h3>
     <ul>
-      <li><strong>B.Tech. in Electrical Engineering, IIT Gandhinagar (2022-Present):</strong> CPI: 8.19/10</li>
       <li><strong>Class XII, Delhi Public School R.K. Puram, New Delhi (2020-2022):</strong> 94%</li>
       <li><strong>Class X, Holy Child School, New Delhi (2018-2020):</strong> 97%</li>
     </ul>
