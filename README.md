@@ -1,6 +1,6 @@
 # Welcome to Aadya Arora's GitHub Page!
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: flex-start;">
   <div style="flex: 1;">
     <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg" alt="GitHub Banner" width="200"/>
   </div>
@@ -27,6 +27,12 @@
       </a>
       <a href="https://github.com/AADYA-ARORA">
         <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      </a>
+      <a href="mailto:aadya.arora@iitgn.ac.in">
+        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      </a>
+      <a href="https://www.instagram.com/your_instagram_username">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
       </a>
     </p>
   </div>
