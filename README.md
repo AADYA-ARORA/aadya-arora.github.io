@@ -10,7 +10,7 @@
     <h3>About Me</h3>
     <ul>
       <li>🔭 I’m currently working on <strong>Open Vocabulary Few Shot Referral Image Segmentation</strong> with Professor <a href="https://vinaypn.github.io/">Vinay Namboodiri</a> at University of Bath.</li>
-      <li>🔭 I’m also working on <strong>Shadow and Rainfall Removal in Images</strong> with Professor <a href="https://www.shanmuga.people.iitgn.ac.in/">Shamnuganathan Raman</a> at CVIG Lab, IIT Gandhinagar.</li>
+      <li>🔭 I’m also working on <strong>Shadow and Rainfall Removal in Images</strong> with Professor <a href="https://www.shanmuga.people.iitgn.ac.in/">Shanmuganathan Raman</a> at CVIG Lab, IIT Gandhinagar.</li>
       <li>🌱 I’m currently learning advanced techniques in <strong>image processing</strong> and <strong>machine learning</strong>.</li>
       <li>👯 I’m looking to collaborate on projects related to <strong>Data Science</strong>, <strong>Computer Vision</strong>, <strong>Deep Learning</strong> and <strong>Machine Learning</strong>.</li>
       <li>📫 How to reach me: <a href="mailto:aadya.arora@iitgn.ac.in">aadya.arora@iitgn.ac.in</a></li>
