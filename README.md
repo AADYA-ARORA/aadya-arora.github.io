@@ -1,7 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadya Arora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h2, h3 {
+      color: #0077B5;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1;">
-    <!-- Update the image src attribute with the direct image URL -->
-    <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/IMG_0661.jpg" width="250" alt="Aadya Arora"/>
+    <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" width="250" alt="Aadya Arora"/>
   </div>
   <div style="flex: 2; padding-left: 20px;">
     <h2>Hi there!</h2>
@@ -42,30 +71,43 @@
   </div>
 </div>
 
+<hr>
+
 <h3>My Internships</h3>
 <ul>
-  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation | University Of Bath</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.</li>
-  <li><strong>Advancing Autonomous Driving Systems for Indian Roads | IIIT Hyderabad</strong>: Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.</li>
+  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP. <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a></li>
+  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong>: Comprehensive solutions for uncommon scenarios and corner cases on Indian roads. <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a></li>
 </ul>
 
 <h3>My Projects</h3>
 <ul>
   <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP. <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a></li>
   <li><strong>Shadow and Rainfall Removal in Images</strong>: Techniques for improving accuracy of downstream tasks like semantic segmentation and object detection in adverse weather conditions using transformer and diffusion architectures. <a href="https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal">[GitHub]</a></li>
-  <!-- Add other project items as needed -->
+  <li><strong>NextCharacterPredictor</strong>: An MLP-based next character prediction model trained on several famous corpora. <a href="https://github.com/Robohrriday/ML_2024_TensionFlow_A3">[GitHub]</a></li>
+  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong>: Comprehensive solutions for uncommon scenarios and corner cases on Indian roads. <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a></li>
+  <li><strong>Human Activity Recognition (HAR)</strong>: Utilized the UCI-HAR dataset, which comprises time-series data capturing the activities of thirty subjects engaging in six different activities classified as walking, sitting, standing, running up, running straight and running down. <a href="https://github.com/ES335-2024/assignment-1-ml-tensionflow">[GitHub]</a></li>
+  <li><strong>FPGA Implementation of a Complete Processor Design</strong>: Designed a 8-bit, 16-register file processor, supporting arithmetic, logic and branch instructions using verilog. Synthesized and Implemented this design on a Basys3 board and tested it with complicated programs. <a href="https://drive.google.com/file/d/17sn1dGt2OUcFvrcrlaF2K8Nw1NFW_ZPb/view">[Link]</a></li>
+  <li><strong>Fuzzy Logic based Android Application</strong>: Designed and Deployed a fuzzy logic-based android app which detects fall of a device using accelerometer data. Implemented a fuzzy system, which uses fuzzy accelerometer and sound levels to detect danger levels. In case of high danger, triggers an alert to transmit sound and GPS data using TCP/IP to another phone. <a href="https://drive.google.com/drive/folders/1b3QZBsjZjNEj7Gf0RcK6uNscTXxKR9Eo">[Link]</a></li>
+  <li><strong>Data Narrative: Exploring and Analyzing Datasets</strong>: Conducted statistical analysis on multiple probability distributions, optimizing parameters, visualizing data trends, and computing key statistical measures to extract actionable insights. Crafted a comprehensive data narrative, exploring scientific questions and hypotheses using Python libraries. <a href="https://github.com/AADYA-ARORA/Data-Narratives">[GitHub]</a></li>
+  <li><strong>EPCOT: Evaporative Peltier Cooling Tent, for humidity and temperature regulation</strong>: Successfully incorporated the Peltier Module for cooling along with the traditional Evaporation based Cooling method to achieve an optimal balance between efficiency as well as sustainability of the cooling model. <a href="https://www.ahmedabadmirror.com/solutions-for-real-life-problems/81859419.html">[Link]</a></li>
+  <li><strong>Mangalyaan Propellant Consumption Analysis Using Numerical Methods</strong>: Analysed in detail the propellant consumption for ISRO’s Mars Mission, Mangalyaan by numerical simulation. Implemented numerical techniques, including Euler’s method and Runge-Kutta method, to discretize energy and iteratively determine the mass of propellant for every maneuver. <a href="https://drive.google.com/file/d/1Y13WqOKOdwSQAbhMXb0pXW_ddzerIZAB/view">[Link]</a></li>
 </ul>
+
+<hr>
 
 <h3>Positions of Responsibility</h3>
 <ul>
-  <li><strong>Coordinator for Career Exposure and Guidance (Professional Development Council, IITGN)</strong> [Aug '24 - Ongoing]</li>
-  <li><strong>Student Guide (Student Support Services, IITGN)</strong> [Aug '23 - April '24]</li>
-  <li><strong>General Member (Professional Development Council, IITGN)</strong> [Aug '23 - Ongoing]</li>
-  <li><strong>Public Relations Executive, Blithchron (Annual Cultural Fest - IITGN)</strong> [Nov '23 - Mar '24]</li>
-  <li><strong>Design Executive, Blithchron (Annual Cultural Fest - IITGN)</strong> [Sep '22 - Feb '23]</li>
+  <li><strong>Coordinator for Career Exposure and Guidance (Professional Development Council, IITGN) [Aug '24 - Ongoing]</strong></li>
+  <li><strong>Student Guide (Student Support Services, IITGN) [Aug '23 - April '24]</strong></li>
+  <li><strong>General Member (Professional Development Council, IITGN) [Aug '23 - Ongoing]</strong></li>
+  <li><strong>Public Relations Executive, Blithchron (Annual Cultural Fest - IITGN) [Nov '23 - Mar '24]</strong></li>
+  <li><strong>Design Executive, Blithchron (Annual Cultural Fest - IITGN) [Sep '22 - Feb '23]</strong></li>
 </ul>
+
+<hr>
 
 <p>Feel free to reach out and connect with me!</p>
 
-<!-- Add the Profile Views badge -->
-<img src="https://komarev.com/ghpvc/?username=AADYA-ARORA&color=blue" alt="Profile Views" />
+</body>
+</html>
 
