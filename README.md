@@ -35,15 +35,6 @@ Here are a few projects I’ve worked on:
 - [**NextCharacterPredictor**](https://github.com/AADYA-ARORA/projectname): An MLP-based next character prediction model trained on several famous corpora.
 - [**Advancing Autonomous Driving Systems for Indian Roads**](https://github.com/AADYA-ARORA/projectname): Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.
 
-### Academic Details
-
-- **B.Tech. in Electrical Engineering, IIT Gandhinagar (2022-Present)**
-  - **CPI:** 8.19/10
-- **Class XII, Delhi Public School R.K. Puram, New Delhi (2020-2022)**
-  - **Percentage:** 94%
-- **Class X, Holy Child School, New Delhi (2018-2020)**
-  - **Percentage:** 97%
-
 ### Positions of Responsibility
 
 - **Coordinator for Career Exposure and Guidance (Professional Development Council, IITGN) [Aug '24 - Ongoing]**
