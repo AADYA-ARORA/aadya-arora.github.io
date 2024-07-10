@@ -1,40 +1,38 @@
 # Welcome to Aadya Arora's GitHub Page!
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg" alt="GitHub Banner" width="200" />
-    </td>
-    <td>
-      <h2>Hi there!</h2>
-      <p>
-        I am <strong>Aadya Arora</strong>, an undergraduate student majoring in <strong>Electrical Engineering</strong> with a minor in <strong>Artificial Intelligence</strong> at the <strong>Indian Institute of Technology Gandhinagar</strong>.
-      </p>
-      <h3>About Me</h3>
-      <ul>
-        <li>🔭 I’m currently working on <strong>Open Vocabulary Few Shot Referral Image Segmentation</strong> with Professor <a href="https://vinaypn.github.io/">Vinay Namboodiri</a> at University of Bath.</li>
-        <li>🔭 I’m also working on <strong>Shadow and Rainfall Removal in Images</strong> with Professor <a href="https://www.shanmuga.people.iitgn.ac.in/">Shamnuganathan Raman</a> at CVIG Lab, IIT Gandhinagar.</li>
-        <li>🌱 I’m currently learning advanced techniques in <strong>image processing</strong> and <strong>machine learning</strong>.</li>
-        <li>👯 I’m looking to collaborate on projects related to <strong>Data Science</strong>, <strong>Computer Vision</strong>, <strong>Deep Learning</strong> and <strong>Machine Learning</strong>.</li>
-        <li>📫 How to reach me: <a href="mailto:aadya.arora@iitgn.ac.in">aadya.arora@iitgn.ac.in</a></li>
-      </ul>
-      <h3>My Skills</h3>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, C</li>
-        <li><strong>Tools:</strong> MATLAB, Autodesk Inventor, Jupyter Notebook, Spyder, numpy, scipy, matplotlib, seaborn, pandas</li>
-      </ul>
-      <h3>Connect with Me</h3>
-      <p>
-        <a href="https://www.linkedin.com/in/aadya-arora-069253259/">
-          <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/AADYA-ARORA">
-          <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-        </a>
-      </p>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1;">
+    <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg" alt="GitHub Banner" width="200"/>
+  </div>
+  <div style="flex: 2; padding-left: 20px;">
+    <h2>Hi there!</h2>
+    <p>I am <strong>Aadya Arora</strong>, an undergraduate student majoring in <strong>Electrical Engineering</strong> with a minor in <strong>Artificial Intelligence</strong> at the <strong>Indian Institute of Technology Gandhinagar</strong>.</p>
+    <h3>About Me</h3>
+    <ul>
+      <li>🔭 I’m currently working on <strong>Open Vocabulary Few Shot Referral Image Segmentation</strong> with Professor <a href="https://vinaypn.github.io/">Vinay Namboodiri</a> at University of Bath.</li>
+      <li>🔭 I’m also working on <strong>Shadow and Rainfall Removal in Images</strong> with Professor <a href="https://www.shanmuga.people.iitgn.ac.in/">Shamnuganathan Raman</a> at CVIG Lab, IIT Gandhinagar.</li>
+      <li>🌱 I’m currently learning advanced techniques in <strong>image processing</strong> and <strong>machine learning</strong>.</li>
+      <li>👯 I’m looking to collaborate on projects related to <strong>Data Science</strong>, <strong>Computer Vision</strong>, <strong>Deep Learning</strong> and <strong>Machine Learning</strong>.</li>
+      <li>📫 How to reach me: <a href="mailto:aadya.arora@iitgn.ac.in">aadya.arora@iitgn.ac.in</a></li>
+    </ul>
+    <h3>My Skills</h3>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, C</li>
+      <li><strong>Tools:</strong> MATLAB, Autodesk Inventor, Jupyter Notebook, Spyder, numpy, scipy, matplotlib, seaborn, pandas</li>
+    </ul>
+    <h3>Connect with Me</h3>
+    <p>
+      <a href="https://www.linkedin.com/in/aadya-arora-069253259/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/AADYA-ARORA">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      </a>
+    </p>
+  </div>
+</div>
+
+---
 
 ### My Internships
 
@@ -65,6 +63,3 @@
 Feel free to reach out and connect with me!
 
 ![Profile Views](https://komarev.com/ghpvc/?username=AADYA-ARORA&color=blue)
-
-
-
