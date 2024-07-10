@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -75,22 +74,58 @@
 
 <h3>My Internships</h3>
 <ul>
-  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP. <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a></li>
-  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong>: Comprehensive solutions for uncommon scenarios and corner cases on Indian roads. <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a></li>
+  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong><br>
+    Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.<br>
+    <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
+  </li>
+  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong><br>
+    Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.<br>
+    <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a>
+  </li>
 </ul>
 
 <h3>My Projects</h3>
 <ul>
-  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP. <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a></li>
-  <li><strong>Shadow and Rainfall Removal in Images</strong>: Techniques for improving accuracy of downstream tasks like semantic segmentation and object detection in adverse weather conditions using transformer and diffusion architectures. <a href="https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal">[GitHub]</a></li>
-  <li><strong>NextCharacterPredictor</strong>: An MLP-based next character prediction model trained on several famous corpora. <a href="https://github.com/Robohrriday/ML_2024_TensionFlow_A3">[GitHub]</a></li>
-  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong>: Comprehensive solutions for uncommon scenarios and corner cases on Indian roads. <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a></li>
-  <li><strong>Human Activity Recognition (HAR)</strong>: Utilized the UCI-HAR dataset, which comprises time-series data capturing the activities of thirty subjects engaging in six different activities classified as walking, sitting, standing, running up, running straight and running down. <a href="https://github.com/ES335-2024/assignment-1-ml-tensionflow">[GitHub]</a></li>
-  <li><strong>FPGA Implementation of a Complete Processor Design</strong>: Designed a 8-bit, 16-register file processor, supporting arithmetic, logic and branch instructions using verilog. Synthesized and Implemented this design on a Basys3 board and tested it with complicated programs. <a href="https://drive.google.com/file/d/17sn1dGt2OUcFvrcrlaF2K8Nw1NFW_ZPb/view">[Link]</a></li>
-  <li><strong>Fuzzy Logic based Android Application</strong>: Designed and Deployed a fuzzy logic-based android app which detects fall of a device using accelerometer data. Implemented a fuzzy system, which uses fuzzy accelerometer and sound levels to detect danger levels. In case of high danger, triggers an alert to transmit sound and GPS data using TCP/IP to another phone. <a href="https://drive.google.com/drive/folders/1b3QZBsjZjNEj7Gf0RcK6uNscTXxKR9Eo">[Link]</a></li>
-  <li><strong>Data Narrative: Exploring and Analyzing Datasets</strong>: Conducted statistical analysis on multiple probability distributions, optimizing parameters, visualizing data trends, and computing key statistical measures to extract actionable insights. Crafted a comprehensive data narrative, exploring scientific questions and hypotheses using Python libraries. <a href="https://github.com/AADYA-ARORA/Data-Narratives">[GitHub]</a></li>
-  <li><strong>EPCOT: Evaporative Peltier Cooling Tent, for humidity and temperature regulation</strong>: Successfully incorporated the Peltier Module for cooling along with the traditional Evaporation based Cooling method to achieve an optimal balance between efficiency as well as sustainability of the cooling model. <a href="https://www.ahmedabadmirror.com/solutions-for-real-life-problems/81859419.html">[Link]</a></li>
-  <li><strong>Mangalyaan Propellant Consumption Analysis Using Numerical Methods</strong>: Analysed in detail the propellant consumption for ISRO’s Mars Mission, Mangalyaan by numerical simulation. Implemented numerical techniques, including Euler’s method and Runge-Kutta method, to discretize energy and iteratively determine the mass of propellant for every maneuver. <a href="https://drive.google.com/file/d/1Y13WqOKOdwSQAbhMXb0pXW_ddzerIZAB/view">[Link]</a></li>
+  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong><br>
+    Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.<br>
+    <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
+  </li>
+  <li><strong>Shadow and Rainfall Removal in Images</strong><br>
+    Techniques for improving accuracy of downstream tasks like semantic segmentation and object detection in adverse weather conditions using transformer and diffusion architectures.<br>
+    <a href="https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal">[GitHub]</a>
+  </li>
+  <li><strong>NextCharacterPredictor</strong><br>
+    An MLP-based next character prediction model trained on several famous corpora.<br>
+    <a href="https://github.com/Robohrriday/ML_2024_TensionFlow_A3">[GitHub]</a>
+  </li>
+  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong><br>
+    Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.<br>
+    <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a>
+  </li>
+  <li><strong>Human Activity Recognition (HAR)</strong><br>
+    Utilized the UCI-HAR dataset, which comprises time-series data capturing the activities of thirty subjects engaging in six different activities classified as walking, sitting, standing, running up, running straight and running down.<br>
+    <a href="https://github.com/ES335-2024/assignment-1-ml-tensionflow">[GitHub]</a>
+  </li>
+  <li><strong>FPGA Implementation of a Complete Processor Design</strong><br>
+    Designed a 8-bit, 16-register file processor, supporting arithmetic, logic and branch instructions using Verilog. Synthesized and Implemented this design on a Basys3 board and tested it with complicated programs.<br>
+    <a href="https://drive.google.com/file/d/17sn1dGt2OUcFvrcrlaF2K8Nw1NFW_ZPb/view">[Link]</a>
+  </li>
+  <li><strong>Fuzzy Logic based Android Application</strong><br>
+    Designed and Deployed a fuzzy logic-based android app which detects fall of a device using accelerometer data. Implemented a fuzzy system, which uses fuzzy accelerometer and sound levels to detect danger levels. In case of high danger, triggers an alert to transmit sound and GPS data using TCP/IP to another phone.<br>
+    <a href="https://drive.google.com/drive/folders/1b3QZBsjZjNEj7Gf0RcK6uNscTXxKR9Eo">[Link]</a>
+  </li>
+  <li><strong>Data Narrative: Exploring and Analyzing Datasets</strong><br>
+    Conducted statistical analysis on multiple probability distributions, optimizing parameters, visualizing data trends, and computing key statistical measures to extract actionable insights. Crafted a comprehensive data narrative, exploring scientific questions and hypotheses using Python libraries.<br>
+    <a href="https://github.com/AADYA-ARORA/Data-Narratives">[GitHub]</a>
+  </li>
+  <li><strong>EPCOT: Evaporative Peltier Cooling Tent, for humidity and temperature regulation</strong><br>
+    Successfully incorporated the Peltier Module for cooling along with the traditional Evaporation based Cooling method to achieve an optimal balance between efficiency as well as sustainability of the cooling model.<br>
+    <a href="https://www.ahmedabadmirror.com/solutions-for-real-life-problems/81859419.html">[Link]</a>
+  </li>
+  <li><strong>Mangalyaan Propellant Consumption Analysis Using Numerical Methods</strong><br>
+    Analysed in detail the propellant consumption for ISRO’s Mars Mission, Mangalyaan by numerical simulation. Implemented numerical techniques, including Euler’s method and Runge-Kutta method, to discretize energy and iteratively determine the mass of propellant for every maneuver.<br>
+    <a href="https://drive.google.com/file/d/1Y13WqOKOdwSQAbhMXb0pXW_ddzerIZAB/view">[Link]</a>
+  </li>
 </ul>
 
 <hr>
@@ -110,4 +145,3 @@
 
 </body>
 </html>
-
