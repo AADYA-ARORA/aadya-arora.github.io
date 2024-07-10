@@ -26,11 +26,9 @@ I am **Aadya Arora**, an undergraduate student majoring in **Electrical Engineer
 
 ### My Internships
 
-Here are a few projects I’ve worked on:
+- [**Open Vocabulary Few Shot Referral Image Segmentation | University Of Bath**](https://github.com/AADYA-ARORA/projectname): Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.
 
-- [**Open Vocabulary Few Shot Referral Image Segmentation**](https://github.com/AADYA-ARORA/projectname): Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.
-
-- [**Advancing Autonomous Driving Systems for Indian Roads**](https://github.com/AADYA-ARORA/projectname): Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.
+- [**Advancing Autonomous Driving Systems for Indian Roads | IIIT Hyderabad **](https://github.com/AADYA-ARORA/projectname): Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.
 
 ### My Projects
 
