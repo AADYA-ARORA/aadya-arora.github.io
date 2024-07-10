@@ -2,7 +2,7 @@
 
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1;">
-    <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg" width="200"/>
+    <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg" width="250"/>
   </div>
   <div style="flex: 2; padding-left: 20px;">
     <h2>Hi there!</h2>
