@@ -15,6 +15,12 @@
       <li>👯 I’m looking to collaborate on projects related to <strong>Data Science</strong>, <strong>Computer Vision</strong>, <strong>Deep Learning</strong> and <strong>Machine Learning</strong>.</li>
       <li>📫 How to reach me: <a href="mailto:aadya.arora@iitgn.ac.in">aadya.arora@iitgn.ac.in</a></li>
     </ul>
+    <h3>Academic Details</h3>
+    <ul>
+      <li><strong>B.Tech. in Electrical Engineering, IIT Gandhinagar (2022-Present):</strong> CPI: 8.19/10</li>
+      <li><strong>Class XII, Delhi Public School R.K. Puram, New Delhi (2020-2022):</strong> 94%</li>
+      <li><strong>Class X, Holy Child School, New Delhi (2018-2020):</strong> 97%</li>
+    </ul>
     <h3>My Skills</h3>
     <ul>
       <li><strong>Programming Languages:</strong> Python, C</li>
