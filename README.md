@@ -2,7 +2,7 @@
 
 ![GitHub Banner](https://yourimageurl.com/banner.png)
 
-## Hi there! 👋
+## Hi there! 
 
 I am **Aadya Arora**, an undergraduate student majoring in **Electrical Engineering** with a minor in **Artificial Intelligence** at the **Indian Institute of Technology Gandhinagar**.
 
