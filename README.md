@@ -1,8 +1,7 @@
-# Aadya Arora
-
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1;">
-    <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg" width="250" alt="Aadya Arora"/>
+    <!-- Update the image src attribute with the direct image URL -->
+    <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/IMG_0661.jpg" width="250" alt="Aadya Arora"/>
   </div>
   <div style="flex: 2; padding-left: 20px;">
     <h2>Hi there!</h2>
@@ -41,35 +40,32 @@
       </a>
     </p>
   </div>
+</div>
 
+<h3>My Internships</h3>
+<ul>
+  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation | University Of Bath</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.</li>
+  <li><strong>Advancing Autonomous Driving Systems for Indian Roads | IIIT Hyderabad</strong>: Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.</li>
+</ul>
 
-### My Internships
+<h3>My Projects</h3>
+<ul>
+  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong>: Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP. <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a></li>
+  <li><strong>Shadow and Rainfall Removal in Images</strong>: Techniques for improving accuracy of downstream tasks like semantic segmentation and object detection in adverse weather conditions using transformer and diffusion architectures. <a href="https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal">[GitHub]</a></li>
+  <!-- Add other project items as needed -->
+</ul>
 
-- [**Open Vocabulary Few Shot Referral Image Segmentation | University Of Bath**](https://github.com/AADYA-ARORA/projectname): Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.
-- [**Advancing Autonomous Driving Systems for Indian Roads | IIIT Hyderabad**](https://github.com/AADYA-ARORA/Autonomous_IDD): Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.
+<h3>Positions of Responsibility</h3>
+<ul>
+  <li><strong>Coordinator for Career Exposure and Guidance (Professional Development Council, IITGN)</strong> [Aug '24 - Ongoing]</li>
+  <li><strong>Student Guide (Student Support Services, IITGN)</strong> [Aug '23 - April '24]</li>
+  <li><strong>General Member (Professional Development Council, IITGN)</strong> [Aug '23 - Ongoing]</li>
+  <li><strong>Public Relations Executive, Blithchron (Annual Cultural Fest - IITGN)</strong> [Nov '23 - Mar '24]</li>
+  <li><strong>Design Executive, Blithchron (Annual Cultural Fest - IITGN)</strong> [Sep '22 - Feb '23]</li>
+</ul>
 
+<p>Feel free to reach out and connect with me!</p>
 
-### My Projects
+<!-- Add the Profile Views badge -->
+<img src="https://komarev.com/ghpvc/?username=AADYA-ARORA&color=blue" alt="Profile Views" />
 
-- [**Open Vocabulary Few Shot Referral Image Segmentation**](https://github.com/AADYA-ARORA/projectname): Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.
-- [**Shadow and Rainfall Removal in Images**](https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal): Techniques for improving accuracy of downstream tasks like semantic segmentation and object detection in adverse weather conditions using transformer and diffusion architectures.
-- [**NextCharacterPredictor**](https://github.com/Robohrriday/ML_2024_TensionFlow_A3): An MLP-based next character prediction model trained on several famous corpora.
-- [**Advancing Autonomous Driving Systems for Indian Roads**](https://github.com/AADYA-ARORA/Autonomous_IDD): Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.
-- [**Human Activity Recognizion (HAR)**](https://github.com/ES335-2024/assignment-1-ml-tensionflow): Utilized the UCI-HAR dataset, which comprises time-series data capturing the activities of thirty subjects engaging in six different activities classified as walking, sitting, standing, running up, running straight and running down.
-- [**FPGA Implementation of a Complete Processor Design**](https://drive.google.com/file/d/17sn1dGt2OUcFvrcrlaF2K8Nw1NFW_ZPb/view): Designed a 8-bit, 16-register file processor, supporting arithmetic, logic and branch instructions using verilog. Synthesized and Implemented this design on a Basys3 board and tested it with complicated programs.
-- [**Fuzzy Logic based Android Application**](https://drive.google.com/drive/folders/1b3QZBsjZjNEj7Gf0RcK6uNscTXxKR9Eo): Designed and Deployed a fuzzy logic-based android app which detects fall of a device using accelerometer data. Implemented a fuzzy system, which uses fuzzy accelerometer and sound levels to detect danger levels. In case of high danger, triggers an alert to transmit sound and GPS data using TCP/IP to another phone.
-- [**Data Narrative: Exploring and Analyzing Datasets**](https://github.com/AADYA-ARORA/Data-Narratives): Conducted statistical analysis on multiple probability distributions, optimizing parameters, visualizing data trends, and computing key statistical measures to extract actionable insights. Crafted a comprehensive data narrative, exploring scientific questions and hypotheses using Python libraries.
-- [**EPCOT: Evaporative Peltier Cooling Tent, for humidity and temperature regulation**](https://www.ahmedabadmirror.com/solutions-for-real-life-problems/81859419.html): Successfully incorporated the Peltier Module for cooling along with the traditional Evaporation based Cooling method to achieve an optimal balance between efficiency as well as sustainability of the cooling model.
-- [**Mangalyaan Propellant Consumption Analysis Using Numerical Methods**](https://drive.google.com/file/d/1Y13WqOKOdwSQAbhMXb0pXW_ddzerIZAB/view): Analysed in detail the propellant consumption for ISRO’s Mars Mission, Mangalyaan by numerical simulation. Implemented numerical techniques, including Euler’s method and Runge-Kutta method, to discretize energy and iteratively determine the mass of propellant for every maneuver.
-
-### Positions of Responsibility
-
-- **Coordinator for Career Exposure and Guidance (Professional Development Council, IITGN) [Aug '24 - Ongoing]**
-- **Student Guide (Student Support Services, IITGN) [Aug '23 - April '24]**
-- **General Member (Professional Development Council, IITGN) [Aug '23 - Ongoing]**
-- **Public Relations Executive, Blithchron (Annual Cultural Fest - IITGN) [Nov '23 - Mar '24]**
-- **Design Executive, Blithchron (Annual Cultural Fest - IITGN) [Sep '22 - Feb '23]**
-
-Feel free to reach out and connect with me!
-
-![Profile Views](https://komarev.com/ghpvc/?username=AADYA-ARORA&color=blue)
