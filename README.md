@@ -9,7 +9,7 @@ I am **Aadya Arora**, an undergraduate student majoring in **Electrical Engineer
 ### About Me
 
 - 🔭 I’m currently working on **Open Vocabulary Few Shot Referral Image Segmentation** with Professor [**Vinay Namboodiri**](https://vinaypn.github.io/) at University of Bath.
-- 🔭 I’m also working on **hadow and Rainfall Removal in Images** with Professor [**Shamnuganathan Raman**](https://vinaypn.github.io/) at CVIG Lab, IIT Gandhinagar.
+- 🔭 I’m also working on **hadow and Rainfall Removal in Images** with Professor [**Shamnuganathan Raman**](https://www.shanmuga.people.iitgn.ac.in/) at CVIG Lab, IIT Gandhinagar.
 - 🌱 I’m currently learning advanced techniques in **image processing** and **machine learning**.
 - 👯 I’m looking to collaborate on projects related to **Data Science**, **Computer Vision**, **Deep Learning** and **Machine Learning**.
 - 📫 How to reach me: [aadya.arora@iitgn.ac.in](mailto:aadya.arora@iitgn.ac.in)
