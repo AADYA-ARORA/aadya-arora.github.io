@@ -1,6 +1,6 @@
 # Welcome to Aadya Arora's GitHub Page!
 
-![GitHub Banner](https://yourimageurl.com/banner.png)
+![GitHub Banner](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg)
 
 ## Hi there! 
 
