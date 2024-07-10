@@ -41,9 +41,7 @@
       </a>
     </p>
   </div>
-</div>
 
----
 
 ### My Internships
 
