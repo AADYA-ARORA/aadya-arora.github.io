@@ -8,7 +8,7 @@ I am **Aadya Arora**, an undergraduate student majoring in **Electrical Engineer
 
 ### About Me
 
-- 🔭 I’m currently working on **Open Vocabulary Few Shot Referral Image Segmentation** and **Shadow and Rainfall Removal in Images**.
+- 🔭 I’m currently working on **Open Vocabulary Few Shot Referral Image Segmentation** with Professor [**Vinay Namboodiri**](https://vinaypn.github.io/) at University of Bath.
 - 🌱 I’m currently learning advanced techniques in **image processing** and **machine learning**.
 - 👯 I’m looking to collaborate on projects related to **semantic segmentation**, **object detection**, and **autonomous driving systems**.
 - 🤔 I’m looking for help with enhancing **image segmentation** models.
