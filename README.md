@@ -1,4 +1,4 @@
-# Welcome to Aadya Arora's GitHub Page!
+# Aadya Arora
 
 <div style="display: flex; align-items: flex-start;">
   <div style="flex: 1;">
