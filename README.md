@@ -31,7 +31,7 @@
       <a href="mailto:aadya.arora@iitgn.ac.in">
         <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
       </a>
-      <a href="https://www.instagram.com/your_instagram_username">
+      <a href="https://www.instagram.com/aadya_0219/">
         <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
       </a>
     </p>
