@@ -54,7 +54,7 @@
     </ul>
     </ul>
      <h3>Resume</h3>
-     <a href="URL_TO_YOUR_RESUME" target="_blank">Click here to view my resume</a>
+     <a href="[https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/aadya_resume_full.pdf]" target="_blank">Click here to view my resume</a>
     </ul>
     <h3>Connect with Me</h3>
     <p>
