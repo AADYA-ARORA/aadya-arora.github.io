@@ -76,15 +76,15 @@
 <ul>
   <li><strong>Open Vocabulary Few Shot Referral Image Segmentation | Summer Internship, University of Bath</strong><br>
     Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.<br>
-    <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
+    <a href="https://github.com/AADYA-ARORA/projectname">[Will be Updated soon!]</a>
   </li>
   <li><strong>CLIP-SAM Hybrid Encoder for Image Classification | Summer Internship, University of Bath</strong><br>
     Implemented a novel fusion mechanism combining RGB images and segmented masks, achieving superior performance over traditional linear probes in benchmark tests.<br>
-    <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
+    <a href="https://github.com/AADYA-ARORA/projectname">[Will be Updated soon!]</a>
   </li>
   <li><strong>Advancing Autonomous Driving Systems for Indian Roads | Winter Internship, IIIT Hyderabad</strong><br>
     Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.<br>
-    <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a>
+    <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[Will be Updated soon!]</a>
   </li>
 </ul>
 
