@@ -90,10 +90,7 @@
 
 <h3>My Projects</h3>
 <ul>
-  <li><strong>Open Vocabulary Few Shot Referral Image Segmentation</strong><br>
-    Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.<br>
-    <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
-  </li>
+  
   <li><strong>Shadow and Rainfall Removal in Images</strong><br>
     Achieved state-of-the-art performance in shadow segmentation with 1.3 BER on ISTD dataset, using SAM backbone enhanced with adapter and wavelet features. Currently optimizing model through distillation techniques.<br>
     <a href="https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal">[GitHub]</a>
@@ -101,10 +98,6 @@
   <li><strong>NextCharacterPredictor</strong><br>
     An MLP-based next character prediction model trained on several famous corpora.<br>
     <a href="https://github.com/Robohrriday/ML_2024_TensionFlow_A3">[GitHub]</a>
-  </li>
-  <li><strong>Advancing Autonomous Driving Systems for Indian Roads</strong><br>
-    Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.<br>
-    <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a>
   </li>
   <li><strong>Human Activity Recognition (HAR)</strong><br>
     Utilized the UCI-HAR dataset, which comprises time-series data capturing the activities of thirty subjects engaging in six different activities classified as walking, sitting, standing, running up, running straight and running down.<br>
