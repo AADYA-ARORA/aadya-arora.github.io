@@ -78,6 +78,10 @@
     Techniques to partition images into semantic regions based on arbitrary text descriptions using MaskDINO, BERT, and CLIP.<br>
     <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
   </li>
+  <li><strong>CLIP-SAM Hybrid Encoder for Image Classification | Summer Internship, University of Bath</strong><br>
+    Implemented a novel fusion mechanism combining RGB images and segmented masks, achieving superior performance over traditional linear probes in benchmark tests.<br>
+    <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
+  </li>
   <li><strong>Advancing Autonomous Driving Systems for Indian Roads | Winter Internship, IIIT Hyderabad</strong><br>
     Comprehensive solutions for uncommon scenarios and corner cases on Indian roads.<br>
     <a href="https://github.com/AADYA-ARORA/Autonomous_IDD">[GitHub]</a>
@@ -91,7 +95,7 @@
     <a href="https://github.com/AADYA-ARORA/projectname">[GitHub]</a>
   </li>
   <li><strong>Shadow and Rainfall Removal in Images</strong><br>
-    Techniques for improving accuracy of downstream tasks like semantic segmentation and object detection in adverse weather conditions using transformer and diffusion architectures.<br>
+    Achieved state-of-the-art performance in shadow segmentation with 1.3 BER on ISTD dataset, using SAM backbone enhanced with adapter and wavelet features. Currently optimizing model through distillation techniques.<br>
     <a href="https://github.com/Shadow-Segmentation-and-Removal/Shadow-Segmentation-and-Removal">[GitHub]</a>
   </li>
   <li><strong>NextCharacterPredictor</strong><br>
