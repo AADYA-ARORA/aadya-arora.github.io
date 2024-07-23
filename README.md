@@ -52,10 +52,10 @@
       <li><strong>Programming Languages:</strong> Python, C</li>
       <li><strong>Tools:</strong> MATLAB, Autodesk Inventor, Jupyter Notebook, Spyder, numpy, scipy, matplotlib, seaborn, pandas</li>
     </ul>
-    
-   <h3>Resume</h3>
-   <a href="URL_TO_YOUR_RESUME" target="_blank">Click here to view my resume</a>
-    
+    </ul>
+     <h3>Resume</h3>
+     <a href="URL_TO_YOUR_RESUME" target="_blank">Click here to view my resume</a>
+    </ul>
     <h3>Connect with Me</h3>
     <p>
       <a href="https://www.linkedin.com/in/aadya-arora-069253259/">
