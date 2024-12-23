@@ -19,7 +19,7 @@ I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, m
 - Achieved significant performance improvements and enabled interpretable classification.
 
 ### WavShadow: Wavelet-Based Shadow Segmentation and Removal
-![WavShadow Teaser](https://via.placeholder.com/800x400.png?text=WavShadow+Teaser)  
+![WavShadow Teaser](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/Wavshadow.png)  
 - **Conference**: ICVGIP’24 - First Author
 - **Advisor**: [Professor Shanmuganathan Raman](https://www.shanmuga.people.iitgn.ac.in/), IIT Gandhinagar
 - Enhanced shadow segmentation with high-pass wavelet filtering and transformer-based removal techniques.
