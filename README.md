@@ -1,9 +1,9 @@
 # Aadya Arora - Portfolio
 
-<div style="text-align: center;">
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" style="width: 150px; border-radius: 50%; margin: 10px;">  
-  <br>
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" style="width: 100px; margin-top: 5px;">
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" style="width: 150px; border-radius: 50%;">
+  <h1 style="margin: 0;">Aadya Arora</h1>
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" style="width: 100px;">
 </div>
 
 ---
