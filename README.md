@@ -9,7 +9,12 @@
     <p><strong>Upcoming</strong>: Data Science Intern at Microsoft R&D.</p>
   </div>
 </p>
-
+<a href="https://github.com/AADYA-ARORA" style="margin: 0 10px;">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://scholar.google.com/citations?user=_mG0F4IAAAAJ&hl=en" style="margin: 0 10px;">
+    <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar">
+</a>
 ---
 ## Education
 
