@@ -1,6 +1,6 @@
-<p align="center">
+<p align="left">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" width="100px"><br>
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" width="150px" style="border-radius: 50%;"><br>
+  <br>
   <h1>Aadya Arora</h1>
 </p>
 
