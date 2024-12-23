@@ -22,9 +22,9 @@
 ## Publications
 
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png" alt="MedFocusCLIP Teaser" width="150px">
-  <div>
+<p align="left">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png" alt="MedFocusCLIP Teaser" width="150px" style="display: inline-block;">
+  <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
     <p><strong>Conference</strong>: ICASSP’25 - First Author</p>
     <p><strong>Advisor</strong>: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath</p>
     <ul>
@@ -32,12 +32,12 @@
       <li>Achieved significant performance improvements and enabled interpretable classification.</li>
     </ul>
   </div>
-</div>
+</p>
 
 ### WavShadow: Wavelet-Based Shadow Segmentation and Removal
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/Wavshadow.png" alt="WavShadow Teaser" width="150px">
-  <div>
+<p align="left">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/Wavshadow.png" alt="WavShadow Teaser" width="150px" style="display: inline-block;">
+  <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
     <p><strong>Conference</strong>: ICVGIP’24 - First Author</p>
     <p><strong>Advisor</strong>: [Professor Shanmuganathan Raman](https://www.shanmuga.people.iitgn.ac.in/), IIT Gandhinagar</p>
     <ul>
@@ -45,7 +45,8 @@
       <li>Achieved superior results on ISTD and DESOBA datasets with optimized distillation methods.</li>
     </ul>
   </div>
-</div>
+</p>
+
 
 ---
 
