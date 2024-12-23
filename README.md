@@ -7,15 +7,13 @@
 
 ## About Me
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <p align="left">
+<p align="left">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" width="150px" style="border-radius: 50%; display: inline-block;">
   <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
     <p>I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, majoring in Electrical Engineering with a minor in Artificial Intelligence. My work focuses on leveraging machine learning, deep learning, and computer vision to create impactful solutions. I am passionate about innovation and solving complex problems using technology.</p>
     <p><strong>Upcoming</strong>: Data Science Intern at Microsoft R&D.</p>
   </div>
 </p>
-
 
 ---
 
@@ -46,7 +44,6 @@
     </ul>
   </div>
 </p>
-
 
 ---
 
@@ -101,7 +98,7 @@
 
 ## Contact Me
 
-<div style="text-align: center;">
+<p align="center">
   <a href="https://www.linkedin.com/in/aadya-arora-069253259/" style="margin: 0 10px;">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
@@ -111,4 +108,4 @@
   <a href="mailto:aadya.arora@iitgn.ac.in" style="margin: 0 10px;">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
-</div>
+</p>
