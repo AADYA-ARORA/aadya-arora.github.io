@@ -1,33 +1,41 @@
 # Aadya Arora - Portfolio
 
+![Aadya Arora](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true)  
+![IITGN Logo](https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/IIT_Gandhinagar_Logo.svg/1200px-IIT_Gandhinagar_Logo.svg.png)
+
 ## About Me
 
 I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, majoring in Electrical Engineering with a minor in Artificial Intelligence. My work focuses on leveraging machine learning, deep learning, and computer vision to create impactful solutions. I am passionate about innovation and solving complex problems using technology.
 
-## Education
+## Publications
 
-- **B.Tech**: Indian Institute of Technology Gandhinagar (2022-Present) - CGPA: 8.32/10
-- **Class XII**: Delhi Public School R.K. Puram, New Delhi (2022) - 94%
-- **Class X**: Holy Child School, New Delhi (2020) - 97%
+### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
+- **Conference**: ICASSP’25 - First Author
+- **Advisor**: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath
+- Tackled limited labeled data in healthcare AI using SAM2 for segmentation and CLIP for classification.
+- Achieved significant performance improvements and enabled interpretable classification.
 
-## Skills
+### WavShadow: Wavelet-Based Shadow Segmentation and Removal
+- **Conference**: ICVGIP’24 - First Author
+- **Advisor**: [Professor Shanmuganathan Raman](https://www.shanmuga.people.iitgn.ac.in/), IIT Gandhinagar
+- Enhanced shadow segmentation with high-pass wavelet filtering and transformer-based removal techniques.
+- Achieved superior results on ISTD and DESOBA datasets with optimized distillation methods.
 
-- **Programming Languages**: Python, C, C++
-- **Tools**: MATLAB, Jupyter Notebook, TensorFlow, PyTorch, OpenCV
-- **Deep Learning Expertise**: CNNs, RCNNs, ViT, SAM Adapter, Detectron, DeepLabv3+
+## Internships
+
+### Open Vocabulary Few Shot Referral Image Segmentation
+- **Duration**: Summer 2024
+- **Advisor**: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath
+- Implemented adapters with HIPIE to improve segmentation accuracy (+2 mIoU on RefCOCO).
+- Enhanced robustness of visual prompts for complex datasets.
+
+### Advancing Autonomous Driving Systems for Indian Roads
+- **Duration**: Winter 2023-2024
+- **Advisors**: [Professor CV Jawahar](https://cvit.iiit.ac.in/), IIIT Hyderabad and [Professor Vineeth N. Balasubramanian](https://faculty.iith.ac.in/~vineethnb/), IIT Hyderabad
+- Engineered robust solutions for autonomous systems on Indian roads.
+- Addressed corner cases using diverse datasets and advanced deep learning techniques.
 
 ## Projects
-
-### MedFocusCLIP
-- **Publication**: ICASSP’25 - First Author
-- Developed a novel model integrating SAM2 (Segment Anything Model 2) with CLIP for medical imaging.
-- Enhanced few-shot classification performance across diverse datasets including X-rays, CT scans, and MRI.
-- Focused on improving interpretability through segmentation and region localization.
-
-### WavShadow
-- **Publication**: ICVGIP’24 - First Author
-- Designed a wavelet-based shadow segmentation model achieving state-of-the-art results on the ISTD dataset.
-- Implemented a transformer-based shadow removal network, surpassing prior benchmarks with 36.7 PSNR.
 
 ### NextCharacterPredictor
 - Built an MLP-based model for next character prediction, leveraging famous corpora for training.
@@ -45,17 +53,17 @@ I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, m
 - Simulated propellant consumption for ISRO’s Mars Mission using numerical methods like Euler’s and Runge-Kutta.
 - Provided detailed analysis of energy consumption for mission maneuvers.
 
-## Publications
+## Education
 
-### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
-- **Advisor**: Professor Vinay Namboodiri, University of Bath
-- Tackled limited labeled data in healthcare AI using SAM2 for segmentation and CLIP for classification.
-- Achieved significant performance improvements and enabled interpretable classification.
+- **B.Tech**: Indian Institute of Technology Gandhinagar (2022-Present) - CGPA: 8.32/10
+- **Class XII**: Delhi Public School R.K. Puram, New Delhi (2022) - 94%
+- **Class X**: Holy Child School, New Delhi (2020) - 97%
 
-### WavShadow: Wavelet-Based Shadow Segmentation and Removal
-- **Advisor**: Professor Shanmuganathan Raman, IIT Gandhinagar
-- Enhanced shadow segmentation with high-pass wavelet filtering and transformer-based removal techniques.
-- Achieved superior results on ISTD and DESOBA datasets with optimized distillation methods.
+## Skills
+
+- **Programming Languages**: Python, C, C++
+- **Tools**: MATLAB, Jupyter Notebook, TensorFlow, PyTorch, OpenCV
+- **Deep Learning Expertise**: CNNs, RCNNs, ViT, SAM Adapter, Detectron, DeepLabv3+
 
 ## Achievements
 
