@@ -16,6 +16,7 @@
     <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar">
 </a>
 ---
+
 ## Education
 
 - **B.Tech**: Indian Institute of Technology Gandhinagar (2022-Present) - CGPA: 8.4/10  
