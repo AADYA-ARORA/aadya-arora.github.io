@@ -1,4 +1,4 @@
-# Aadya Arora - Portfolio
+# Aadya Arora 
 
 ![Aadya Arora](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true)  
 ![IITGN Logo](https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/IIT_Gandhinagar_Logo.svg/1200px-IIT_Gandhinagar_Logo.svg.png)
@@ -7,15 +7,19 @@
 
 I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, majoring in Electrical Engineering with a minor in Artificial Intelligence. My work focuses on leveraging machine learning, deep learning, and computer vision to create impactful solutions. I am passionate about innovation and solving complex problems using technology.
 
+**Upcoming**: Data Science Intern at Microsoft R&D.
+
 ## Publications
 
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
+![MedFocusCLIP Teaser](https://via.placeholder.com/800x400.png?text=MedFocusCLIP+Teaser)  
 - **Conference**: ICASSP’25 - First Author
 - **Advisor**: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath
 - Tackled limited labeled data in healthcare AI using SAM2 for segmentation and CLIP for classification.
 - Achieved significant performance improvements and enabled interpretable classification.
 
 ### WavShadow: Wavelet-Based Shadow Segmentation and Removal
+![WavShadow Teaser](https://via.placeholder.com/800x400.png?text=WavShadow+Teaser)  
 - **Conference**: ICVGIP’24 - First Author
 - **Advisor**: [Professor Shanmuganathan Raman](https://www.shanmuga.people.iitgn.ac.in/), IIT Gandhinagar
 - Enhanced shadow segmentation with high-pass wavelet filtering and transformer-based removal techniques.
