@@ -1,4 +1,4 @@
-##AADYA ARORA
+## AADYA ARORA
 
 ## About Me
 
