@@ -16,9 +16,15 @@
 </p>
 
 ---
+## Education
+
+- **B.Tech**: Indian Institute of Technology Gandhinagar (2022-Present) - CGPA: 8.4/10  
+- **Class XII**: Delhi Public School R.K. Puram, New Delhi (2022) - 94%  
+- **Class X**: Holy Child School, New Delhi (2020) - 97%
+
 
 ## Publications
-
+---
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
 <p align="left">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png" alt="MedFocusCLIP Teaser" width="150px" style="display: inline-block;">
@@ -63,7 +69,7 @@
 
 ---
 
-## Projects
+## Selected Projects
 
 - **NextCharacterPredictor**: Built an MLP-based model for next character prediction, leveraging famous corpora for training.  
 - **Human Activity Recognition**: Utilized the UCI-HAR dataset to classify six human activities using advanced preprocessing.  
@@ -72,13 +78,6 @@
 
 ---
 
-## Education
-
-- **B.Tech**: Indian Institute of Technology Gandhinagar (2022-Present) - CGPA: 8.32/10  
-- **Class XII**: Delhi Public School R.K. Puram, New Delhi (2022) - 94%  
-- **Class X**: Holy Child School, New Delhi (2020) - 97%
-
----
 
 ## Skills
 
@@ -87,6 +86,31 @@
 - **Expertise**: CNNs, RCNNs, ViT, SAM Adapter, Detectron, DeepLabv3+
 
 ---
+## Position of Responsibilities
+
+- **Teaching Assistant, Machine Learning**  
+  *IIT Gandhinagar, Aug ’24 - Nov ’24*  
+  Assisted Professor Nipun Batra in delivering the Machine Learning course, providing support with lectures, assignments, and student queries.
+
+- **Coordinator for Career Exposure and Guidance, Professional Development Council**  
+  *IIT Gandhinagar, Aug ’24 - Ongoing*  
+  Coordinating and conducting various activities and events for the career guidance and professional development of students at IITGN.
+
+- **Student Guide, Student Support Services**  
+  *IIT Gandhinagar, Aug ’23 - April ’24*  
+  Assisted students with a broad range of concerns as part of a dedicated team of faculty members.
+
+- **General Member, Professional Development Council**  
+  *IIT Gandhinagar, Aug ’23 - April ’24*  
+  Provided the student body with a structured framework for their overall professional development.
+
+- **Public Relations Executive, Blithchron, Annual Cultural Fest**  
+  *IIT Gandhinagar, Nov ’23 - Mar ’24*  
+  Contacted and maintained relations with numerous companies for sponsorship.
+
+- **Design Executive, Blithchron, Annual Cultural Fest**  
+  *IIT Gandhinagar, Nov ’22 - Feb ’23*  
+  Created posters and various social media posts using Adobe Illustrator, Canva, and other design software.
 
 ## Achievements
 
