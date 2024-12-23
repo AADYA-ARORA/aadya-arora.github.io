@@ -1,7 +1,7 @@
 # Aadya Arora 
 
 ![Aadya Arora](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true)  
-![IITGN Logo](https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/IIT_Gandhinagar_Logo.svg/1200px-IIT_Gandhinagar_Logo.svg.png)
+![IITGN Logo](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png)
 
 ## About Me
 
