@@ -15,6 +15,7 @@
 <a href="https://scholar.google.com/citations?user=_mG0F4IAAAAJ&hl=en" style="margin: 0 10px;">
     <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar">
 </a>
+
 ---
 
 ## Education
@@ -22,10 +23,11 @@
 - **B.Tech**: Indian Institute of Technology Gandhinagar (2022-Present) - CGPA: 8.4/10  
 - **Class XII**: Delhi Public School R.K. Puram, New Delhi (2022) - 94%  
 - **Class X**: Holy Child School, New Delhi (2020) - 97%
-
+  
+---
 
 ## Publications
----
+
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
 <p align="center">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png" alt="MedFocusCLIP Teaser" width="150px" style="display: inline-block;">
