@@ -1,13 +1,8 @@
-<p align="left">
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" width="100px">
-  <h1 style="display: inline;">Aadya Arora</h1>
-</p>
-
----
+--
 
 ## About Me
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" width="150px" style="border-radius: 50%; display: inline-block;">
   <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
     <p>I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, majoring in Electrical Engineering with a minor in Artificial Intelligence. My work focuses on leveraging machine learning, deep learning, and computer vision to create impactful solutions. I am passionate about innovation and solving complex problems using technology.</p>
@@ -26,7 +21,7 @@
 ## Publications
 ---
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
-<p align="left">
+<p align="center">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png" alt="MedFocusCLIP Teaser" width="150px" style="display: inline-block;">
   <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
     <p><strong>Conference</strong>: ICASSP’25 - First Author</p>
@@ -39,7 +34,7 @@
 </p>
 
 ### WavShadow: Wavelet-Based Shadow Segmentation and Removal
-<p align="left">
+<p align="center">
   <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/Wavshadow.png" alt="WavShadow Teaser" width="150px" style="display: inline-block;">
   <div style="display: inline-block; vertical-align: top; margin-left: 20px;">
     <p><strong>Conference</strong>: ICVGIP’24 - First Author</p>
