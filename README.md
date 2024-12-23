@@ -1,36 +1,50 @@
-# Aadya Arora - Portfolio
-
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" style="width: 150px; border-radius: 50%;">
-  <h1 style="margin: 0;">Aadya Arora</h1>
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" style="width: 100px;">
-</div>
+<p align="center">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" width="100px"><br>
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" width="150px" style="border-radius: 50%;"><br>
+  <h1>Aadya Arora</h1>
+</p>
 
 ---
 
 ## About Me
 
-I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, majoring in Electrical Engineering with a minor in Artificial Intelligence. My work focuses on leveraging machine learning, deep learning, and computer vision to create impactful solutions. I am passionate about innovation and solving complex problems using technology.
-
-**Upcoming**: Data Science Intern at Microsoft R&D.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/IMG_0661.jpg?raw=true" alt="Aadya Arora" width="150px" style="border-radius: 50%;">
+  <div>
+    <p>I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, majoring in Electrical Engineering with a minor in Artificial Intelligence. My work focuses on leveraging machine learning, deep learning, and computer vision to create impactful solutions. I am passionate about innovation and solving complex problems using technology.</p>
+    <p><strong>Upcoming</strong>: Data Science Intern at Microsoft R&D.</p>
+  </div>
+</div>
 
 ---
 
 ## Publications
 
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
-![MedFocusCLIP Teaser](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png)  
-- **Conference**: ICASSP’25 - First Author
-- **Advisor**: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath
-- Tackled limited labeled data in healthcare AI using SAM2 for segmentation and CLIP for classification.
-- Achieved significant performance improvements and enabled interpretable classification.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png" alt="MedFocusCLIP Teaser" width="150px">
+  <div>
+    <p><strong>Conference</strong>: ICASSP’25 - First Author</p>
+    <p><strong>Advisor</strong>: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath</p>
+    <ul>
+      <li>Tackled limited labeled data in healthcare AI using SAM2 for segmentation and CLIP for classification.</li>
+      <li>Achieved significant performance improvements and enabled interpretable classification.</li>
+    </ul>
+  </div>
+</div>
 
 ### WavShadow: Wavelet-Based Shadow Segmentation and Removal
-![WavShadow Teaser](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/Wavshadow.png)  
-- **Conference**: ICVGIP’24 - First Author
-- **Advisor**: [Professor Shanmuganathan Raman](https://www.shanmuga.people.iitgn.ac.in/), IIT Gandhinagar
-- Enhanced shadow segmentation with high-pass wavelet filtering and transformer-based removal techniques.
-- Achieved superior results on ISTD and DESOBA datasets with optimized distillation methods.
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/Wavshadow.png" alt="WavShadow Teaser" width="150px">
+  <div>
+    <p><strong>Conference</strong>: ICVGIP’24 - First Author</p>
+    <p><strong>Advisor</strong>: [Professor Shanmuganathan Raman](https://www.shanmuga.people.iitgn.ac.in/), IIT Gandhinagar</p>
+    <ul>
+      <li>Enhanced shadow segmentation with high-pass wavelet filtering and transformer-based removal techniques.</li>
+      <li>Achieved superior results on ISTD and DESOBA datasets with optimized distillation methods.</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
