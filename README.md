@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" width="100px">
+  <img src="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/iitgn.png" alt="IITGN Logo" width="100px"><h1>Aadya Arora</h1>
   <h1>Aadya Arora</h1>
 </p>
 
