@@ -1,4 +1,4 @@
-## Aadya Arora - Junior Undergraduate, Indian Institute of Technology Gandhinagar 
+## Aadya Arora - Junior Undergraduate,  Indian Institute of Technology Gandhinagar 
 
 ## About Me
 
