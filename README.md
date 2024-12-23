@@ -12,7 +12,7 @@ I am a junior undergraduate at the Indian Institute of Technology Gandhinagar, m
 ## Publications
 
 ### MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets
-![MedFocusCLIP Teaser](https://via.placeholder.com/800x400.png?text=MedFocusCLIP+Teaser)  
+![MedFocusCLIP Teaser](https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/image%20(1).png)  
 - **Conference**: ICASSP’25 - First Author
 - **Advisor**: [Professor Vinay Namboodiri](https://vinaypn.github.io/), University of Bath
 - Tackled limited labeled data in healthcare AI using SAM2 for segmentation and CLIP for classification.
