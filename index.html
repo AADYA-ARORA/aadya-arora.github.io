@@ -1,207 +1,871 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name=viewport content="width=800">
-  <title>Aadya Arora</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <style type="text/css">
-    body, td, th, tr, p, a {
-      font-family: 'Lato', Verdana, Helvetica, sans-serif;
-      font-size: 16px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadya Arora | Researcher | CV | Vision-Language Models</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    a {
-      color: #2d59eb;
+
+    :root {
+      --primary-color: #8b7ddc;
+      --primary-hover: #7a6bc9;
+      --secondary-color: #d4a5d4;
+      --text-primary: #2a2a2a;
+      --text-secondary: #666;
+      --text-light: #999;
+      --bg-light: #f5f0ff;
+      --bg-white: #ffffff;
+      --border-color: #e8dff5;
+      --accent-blue: #a8c5f5;
+      --accent-purple: #d4a5d4;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--bg-white);
+    }
+
+    /* ============ HEADER ============ */
+    header {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      border-bottom: 1px solid var(--border-color);
+      padding: 2rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
       text-decoration: none;
+      color: var(--text-secondary);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.3s;
     }
-    a:hover {
-      color: #af19bf;
+
+    .nav-links a:hover {
+      color: var(--primary-color);
     }
-    name {
-      font-size: 34px;
+
+    /* ============ HERO SECTION ============ */
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .hero-content .subtitle {
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(45, 89, 235, 0.25);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--primary-color);
+      transition: all 0.3s;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .social-links a:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .hero-image {
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 280px;
+      height: 280px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 16px 40px rgba(45, 89, 235, 0.15);
+    }
+
+    /* ============ SECTION STYLES ============ */
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: var(--text-primary);
+    }
+
+    /* ============ ABOUT SECTION ============ */
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: var(--bg-light);
+      padding: 3rem 3.5rem;
+      border-radius: 18px;
+    }
+
+    .about-text {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .about-text p {
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      font-size: 1.02rem;
+    }
+
+    /* ============ PUBLICATIONS ============ */
+    .publications-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .publication-card {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      background-color: var(--bg-light);
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+
+    .publication-card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .publication-image {
+      width: 100%;
+      height: 200px;
+      background-color: var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .publication-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .publication-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .publication-meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .badge.venue {
+      background-color: var(--secondary-color);
+    }
+
+    .publication-content p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .publication-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .publication-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+    }
+
+    .publication-links a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* ============ EXPERIENCE ============ */
+    .experience-timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .experience-item {
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background-color: var(--bg-light);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 6px;
+      position: relative;
+    }
+
+    .experience-item h3 {
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin-bottom: 0.3rem;
+    }
+
+    .experience-item .company {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-item .duration {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .experience-item ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .experience-item li {
+      color: var(--text-secondary);
+      margin-bottom: 0.7rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .experience-item li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
       font-weight: bold;
     }
-    img {
+
+    /* ============ SKILLS ============ */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      padding: 2rem;
+      background-color: var(--bg-light);
       border-radius: 10px;
+      border-top: 3px solid var(--primary-color);
+    }
+
+    .skill-category h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .skill-tag {
+      background-color: white;
+      color: var(--primary-color);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid var(--primary-color);
+      transition: all 0.3s;
+    }
+
+    .skill-tag:hover {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    /* ============ ACHIEVEMENTS ============ */
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .achievement-card {
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(45, 89, 235, 0.2);
+      transition: all 0.3s;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(45, 89, 235, 0.3);
+    }
+
+    .achievement-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .achievement-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .achievement-card p {
+      font-size: 0.9rem;
+      opacity: 0.95;
+    }
+
+    /* ============ CV SECTION ============ */
+    .cv-download {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .cv-card {
+      padding: 2.5rem;
+      background-color: var(--bg-light);
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s;
+      flex: 1;
+      max-width: 350px;
+    }
+
+    .cv-card:hover {
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .cv-card h3 {
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .cv-card p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* ============ FOOTER ============ */
+    footer {
+      background-color: var(--text-primary);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+    }
+
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-image img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .about-content {
+        padding: 2.5rem 1.8rem;
+      }
+
+      .publication-card {
+        grid-template-columns: 1fr;
+      }
+
+      .publication-image {
+        height: 250px;
+      }
+
+      section {
+        padding: 2.5rem 1rem;
+      }
+
+      section h2 {
+        font-size: 1.6rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+
+      .hero-content h1 {
+        font-size: 1.6rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .skill-tag {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+      }
     }
   </style>
 </head>
 
 <body>
-<table width="900" align="center" cellspacing="0" cellpadding="0">
-<tr><td>
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">Aadya Arora</div>
+      <ul class="nav-links">
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- HEADER -->
-<table width="100%" cellspacing="0" cellpadding="20">
-<tr>
-<td width="67%" valign="middle">
-  <p align="center"><name>Aadya Arora</name></p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Aadya Arora</h1>
+      <p class="subtitle">AI Researcher | Vision-Language Models | Medical Imaging</p>
+      
+      <p>Final-year undergraduate at <strong>IIT Gandhinagar</strong>, majoring in Electrical Engineering with a Minor in AI. Passionate about <strong>Computer Vision, Machine Learning, and Generative AI</strong> with applications in healthcare and multimodal perception.</p>
+      
+      <p><strong>Incoming Data Scientist at Microsoft IDC (2026)</strong></p>
 
-  <p>
-    Final-year undergraduate at <b><a href="https://iitgn.ac.in/">IIT Gandhinagar</a></b>, 
-    majoring in Electrical Engineering with a Minor in Artificial Intelligence.
-    My research interests span <b>Computer Vision, Machine Learning, Vision-Language Models,
-    and Generative AI</b>, with a strong focus on healthcare and multimodal perception.
-  </p>
+      <div class="cta-buttons">
+        <a href="#publications" class="btn btn-primary">View Research</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
 
-  <p>
-    Incoming <b>Data Scientist at Microsoft IDC (2026)</b>.  
-    Previously worked at <b>IISc Bangalore, University of Bath, IIIT Hyderabad, IIT Hyderabad, and Microsoft IDC</b>
-    on medical imaging, diffusion transformers, document AI, and autonomous driving.
-  </p>
+      <div class="social-links">
+        <a href="mailto:aadya.arora@iitgn.ac.in" title="Email">📧</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank" title="Google Scholar">🎓</a>
+        <a href="https://github.com/AADYA-ARORA" target="_blank" title="GitHub">💻</a>
+        <a href="https://www.linkedin.com/in/aadya-arora-069253259/" target="_blank" title="LinkedIn">🔗</a>
+        <a href="https://aadya-arora.github.io/" target="_blank" title="Website">🌐</a>
+      </div>
+    </div>
 
-  <p align="center">
-    <a href="mailto:aadya.arora@iitgn.ac.in">Email</a> &nbsp;/&nbsp;
-    <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-    <a href="https://github.com/AADYA-ARORA">GitHub</a> &nbsp;/&nbsp;
-    <a href="https://www.linkedin.com/in/aadya-arora-069253259/">LinkedIn</a> &nbsp;/&nbsp;
-    <a href="https://aadya-arora.github.io/">Website</a>
-  </p>
-</td>
+    <div class="hero-image">
+      <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/IMG_0661.jpg"
+           alt="Aadya Arora">
+    </div>
+  </section>
 
-<td width="33%">
-  <img src="aadya.png" height="300">
-</td>
-</tr>
-</table>
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm a machine learning researcher focused on <strong>vision-language models, medical imaging, and generative AI</strong>. My work bridges computer vision and AI, with applications in healthcare diagnostics and autonomous systems.</p>
+        <p>Through internships at <strong>IISc Bangalore, University of Bath, IIIT Hyderabad, and Microsoft IDC</strong>, I've developed expertise in diffusion models, few-shot learning, document AI, and anomaly detection.</p>
+        <p>Beyond research, I'm passionate about making AI more <strong>interpretable, robust, and practical</strong> for real-world applications.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- EDUCATION -->
-<h2 align="center">Education</h2>
-<ul>
-  <li><b>B.Tech. Electrical Engineering</b>, IIT Gandhinagar (2022–Present), CGPA: 8.4</li>
-  <li><b>Senior Secondary</b>, Delhi Public School R.K. Puram (2022), 94%</li>
-  <li><b>Secondary</b>, Holy Child School, New Delhi (2020), 97%</li>
-</ul>
+  <!-- PUBLICATIONS SECTION -->
+  <section id="publications">
+    <h2>Featured Publications</h2>
+    <div class="publications-grid">
+      
+      <div class="publication-card">
+        <div class="publication-image">
+          <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/medclip.png"
+               alt="MedFocusCLIP medical imaging">
+        </div>
+        <div class="publication-content">
+          <h3>MedFocusCLIP: Few-Shot Medical Classification with Pixel-Wise Attention</h3>
+          <div class="publication-meta">
+            <span class="badge venue">ICASSP 2025</span>
+          </div>
+          <p><strong>Aadya Arora</strong>, Vinay Namboodiri</p>
+          <p>Integrated SAM-based pixel attention with CLIP for interpretable and robust few-shot medical image classification. Demonstrates improved performance on medical datasets through attention mechanism visualization.</p>
+          <div class="publication-links">
+            <a href="#">📄 Paper</a>
+            <a href="https://github.com/AADYA-ARORA">💻 GitHub</a>
+          </div>
+        </div>
+      </div>
 
-<!-- PUBLICATIONS -->
-<h2 align="center">Publications</h2>
-<table width="100%" cellspacing="20">
+      <div class="publication-card">
+        <div class="publication-image">
+          <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/Wavshadow.png"
+               alt="WavShadow shadow removal">
+        </div>
+        <div class="publication-content">
+          <h3>WavShadow: Wavelet-Based Shadow Segmentation and Removal</h3>
+          <div class="publication-meta">
+            <span class="badge venue">ICVGIP 2024</span>
+          </div>
+          <p><strong>S. Jain*</strong>, <strong>Aadya Arora*</strong>, V. Vekaria, K. Gandhi, S. Raman</p>
+          <p>Proposed a wavelet-enhanced pipeline for shadow detection and removal, achieving state-of-the-art performance. Novel approach combining frequency-domain analysis with deep learning.</p>
+          <div class="publication-links">
+            <a href="#">📄 Paper</a>
+            <a href="#">🔗 arXiv</a>
+          </div>
+        </div>
+      </div>
 
-<tr>
-<td width="35%"><img src="battery.png" width="270"></td>
-<td>
-<b>Battery Chemistry Recommendation using Machine Learning</b><br>
-Aadya Arora, S. Patil, P. Bhardwaj<br>
-<b>IEEE IAS Journal</b>, under review (2025)<br>
-Introduced <b>TEMPEST</b>, an LSTM-based framework for internal battery temperature prediction and
-chemistry recommendation.  
-<a href="https://github.com/AADYA-ARORA/EE499">GitHub</a>
-</td>
-</tr>
+      <div class="publication-card">
+        <div class="publication-image">
+          <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/tempest.png"
+               alt="TEMPEST battery chemistry">
+        </div>
+        <div class="publication-content">
+          <h3>Battery Chemistry Recommendation using Machine Learning</h3>
+          <div class="publication-meta">
+            <span class="badge">Under Review</span>
+            <span class="badge venue">IEEE IAS Journal</span>
+          </div>
+          <p><strong>Aadya Arora</strong>, S. Patil, P. Bhardwaj</p>
+          <p>Introduced TEMPEST, an LSTM-based framework for predicting internal battery temperature and recommending optimal chemistry. Applied to EV and grid storage systems.</p>
+          <div class="publication-links">
+            <a href="https://github.com/AADYA-ARORA/EE499">💻 GitHub</a>
+          </div>
+        </div>
+      </div>
 
-<tr>
-<td width="35%"><img src="MedFocusCLIP.png" width="270"></td>
-<td>
-<b>MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets using Pixel-Wise Attention</b><br>
-Aadya Arora, Vinay Namboodiri<br>
-<b>ICASSP 2025</b><br>
-Integrated SAM-based pixel attention with CLIP to enable interpretable and robust few-shot medical classification.  
-<a href="https://arxiv.org/">Paper</a>
-</td>
-</tr>
+    </div>
+  </section>
 
-<tr>
-<td width="35%"><img src="WavShadow.png" width="270"></td>
-<td>
-<b>WavShadow: Wavelet-Based Shadow Segmentation and Removal</b><br>
-S. Jain*, Aadya Arora*, V. Vekaria, K. Gandhi, S. Raman<br>
-<b>ICVGIP 2024</b><br>
-Proposed a wavelet-enhanced pipeline achieving state-of-the-art shadow segmentation and removal.  
-<a href="https://arxiv.org/">Paper</a>
-</td>
-</tr>
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience">
+    <h2>Work & Research Experience</h2>
+    <div class="experience-timeline">
+      
+      <div class="experience-item">
+        <h3>Data Scientist Intern</h3>
+        <div class="company">Microsoft IDC</div>
+        <div class="duration">May – July 2025</div>
+        <ul>
+          <li>Developed LLM-driven system translating natural language into PowerPoint formatting commands</li>
+          <li>Built scalable structured data pipelines and evaluation frameworks</li>
+          <li>Improved robustness on complex formatting tasks through error analysis</li>
+        </ul>
+      </div>
 
-</table>
+      <div class="experience-item">
+        <h3>Research Intern: Diffusion Transformers</h3>
+        <div class="company">Indian Institute of Science (IISc) Bangalore</div>
+        <div class="duration">Dec 2024 – Apr 2025</div>
+        <ul>
+          <li>Performed layer-wise ablation of Diffusion Image Transformers (DiTs)</li>
+          <li>Analyzed attention mechanisms for prompt adherence and semantic control</li>
+          <li>Developed training-free image editing techniques via attention manipulation</li>
+        </ul>
+      </div>
 
-<!-- WORK EXPERIENCE -->
-<h2 align="center">Work Experience</h2>
-<ul>
-<li>
-<b>Data Scientist Intern</b>, Microsoft IDC (May–Jul 2025)<br>
-Developed an LLM-driven system to translate natural language instructions into precise PowerPoint formatting commands.
-Built scalable structured data pipelines, evaluation frameworks, and improved robustness on complex formatting tasks.
-</li>
-<li><b>Incoming Data Scientist</b>, Microsoft IDC (June 2026)</li>
-</ul>
+      <div class="experience-item">
+        <h3>Research Intern: Vision-Language Models</h3>
+        <div class="company">University of Bath</div>
+        <div class="duration">May – July 2024</div>
+        <ul>
+          <li>Implemented open-vocabulary few-shot referring image segmentation</li>
+          <li>Integrated HIPIE adapters with CLIP for improved generalization</li>
+          <li>Achieved 85.15 mIoU on RefCOCO(+) benchmark</li>
+        </ul>
+      </div>
 
-<!-- INTERNSHIPS -->
-<h2 align="center">Research Internships</h2>
-<ul>
+      <div class="experience-item">
+        <h3>Research Intern: Autonomous Driving</h3>
+        <div class="company">IIIT Hyderabad & IIT Hyderabad</div>
+        <div class="duration">Dec 2023 – Jan 2024</div>
+        <ul>
+          <li>Analyzed corner cases in Indian traffic datasets (IDD, CODA)</li>
+          <li>Used class-agnostic RPNs for anomaly discovery in unstructured environments</li>
+          <li>Identified edge cases critical for robust autonomous systems</li>
+        </ul>
+      </div>
 
-<li>
-<b>IISc Bangalore</b> (Dec 2024 – Apr 2025)<br>
-Layer-wise ablation and analysis of Diffusion Image Transformers (DiTs) for prompt adherence,
-semantic control, and training-free image editing using attention manipulation.
-</li>
+    </div>
+  </section>
 
-<li>
-<b>University of Bath</b> (May – Jul 2024)<br>
-Open-vocabulary few-shot referring image segmentation using HIPIE adapters and CLIP,
-achieving <b>85.15 mIoU</b> on RefCOCO(+).
-<a href="https://github.com/">GitHub</a>
-</li>
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2>Skills & Expertise</h2>
+    <div class="skills-grid">
+      
+      <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="skill-list">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">MATLAB</span>
+        </div>
+      </div>
 
-<li>
-<b>IIIT Hyderabad & IIT Hyderabad</b> (Dec 2023 – Jan 2024)<br>
-Analyzed corner cases in autonomous driving datasets (IDD, CODA) using class-agnostic RPNs
-for anomaly discovery in unstructured Indian traffic.
-</li>
+      <div class="skill-category">
+        <h3>Deep Learning & ML</h3>
+        <div class="skill-list">
+          <span class="skill-tag">CNNs</span>
+          <span class="skill-tag">Vision Transformers</span>
+          <span class="skill-tag">CLIP</span>
+          <span class="skill-tag">Diffusion Models</span>
+          <span class="skill-tag">SAM</span>
+          <span class="skill-tag">LSTMs</span>
+        </div>
+      </div>
 
-</ul>
+      <div class="skill-category">
+        <h3>Frameworks & Tools</h3>
+        <div class="skill-list">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">mmDetection</span>
+          <span class="skill-tag">DeepLabv3+</span>
+          <span class="skill-tag">Azure OpenAI</span>
+        </div>
+      </div>
 
-<!-- PROJECTS -->
-<h2 align="center">Selected Projects</h2>
-<ul>
+      <div class="skill-category">
+        <h3>Domains</h3>
+        <div class="skill-list">
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Medical Imaging</span>
+          <span class="skill-tag">Generative AI</span>
+          <span class="skill-tag">Document AI</span>
+          <span class="skill-tag">Autonomous Driving</span>
+        </div>
+      </div>
 
-<li>
-<b>Thermal-Vision Interpretability</b> (Aug 2025 – Present)<br>
-Analyzing failure modes of Vision-Language Models on thermal imagery using attention heatmaps,
-patch similarity, and attention prompting techniques.
-</li>
+    </div>
+  </section>
 
-<li>
-<b>Next Character Predictor</b> (Mar – Apr 2024)<br>
-MLP-based language model trained on literary corpora with architectural and embedding ablations.  
-<a href="https://github.com/Robohrriday/ML_2024_TensionFlow_A3">GitHub</a>
-</li>
+  <!-- ACHIEVEMENTS SECTION -->
+  <section id="achievements">
+    <h2>Key Achievements</h2>
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <div class="achievement-icon">🏆</div>
+        <h3>Microsoft PPO</h3>
+        <p>Pre-Placement Offer as Data Scientist</p>
+      </div>
 
-<li>
-<b>Human Activity Recognition</b> (Jan – Feb 2024)<br>
-Time-series classification on UCI-HAR dataset with advanced preprocessing and feature extraction.  
-<a href="https://github.com/AADYA-ARORA/Data-Narratives">GitHub</a>
-</li>
+      <div class="achievement-card">
+        <div class="achievement-icon">🎓</div>
+        <h3>IEEE Reviewer</h3>
+        <p>Signal Processing Letters (2025–Present)</p>
+      </div>
 
-</ul>
+      <div class="achievement-card">
+        <div class="achievement-icon">📈</div>
+        <h3>JEE Advanced 2022</h3>
+        <p>All India Rank 9406</p>
+      </div>
 
-<!-- SKILLS -->
-<h2 align="center">Skills</h2>
-<ul>
-<li><b>Programming:</b> Python, C, C++</li>
-<li><b>Frameworks & Tools:</b> PyTorch, TensorFlow, OpenCV, MATLAB, Azure OpenAI</li>
-<li><b>Deep Learning:</b> CNNs, ViT, SAM, CLIP, Diffusion Models, mmDetection, DeepLabv3+</li>
-</ul>
+      <div class="achievement-card">
+        <div class="achievement-icon">🎯</div>
+        <h3>Microsoft Research Summit</h3>
+        <p>Invited to MSRI Academic Summit 2025</p>
+      </div>
+    </div>
+  </section>
 
-<!-- POSITIONS -->
-<h2 align="center">Positions of Responsibility</h2>
-<ul>
-<li><b>Reviewer</b>, IEEE Signal Processing Letters (2025–Present)</li>
-<li><b>Management Coordinator</b>, Professional Development Council, IITGN</li>
-<li><b>Teaching Assistant</b>, Machine Learning; Probability & Statistics</li>
-<li><b>Coordinator</b>, Career Exposure & Guidance, PDC IITGN</li>
-<li><b>Student Guide</b>, Student Support Services</li>
-</ul>
+  <!-- CV SECTION -->
+  <section id="cv-download">
+    <h2>Curriculum Vitae</h2>
+    <div class="cv-download">
+      <div class="cv-card">
+        <h3>📄 Full CV</h3>
+        <p>Download my complete CV with detailed research, publications, and academic background.</p>
+        <a href="#" class="btn btn-primary">Download PDF</a>
+      </div>
 
-<!-- ACHIEVEMENTS -->
-<h2 align="center">Achievements</h2>
-<ul>
-<li>Microsoft Pre-Placement Offer – Data Scientist</li>
-<li>Microsoft Research India Academic Summit 2025 (Invited)</li>
-<li>JEE Advanced 2022 – AIR 9406</li>
-<li>KVPY (SX) – Extended List</li>
-<li>State-Level Handball Player (Delhi)</li>
-</ul>
+      <div class="cv-card">
+        <h3>📋 Research Summary</h3>
+        <p>Quick overview of research interests, key publications, and current work focus areas.</p>
+        <a href="#" class="btn btn-primary">View Summary</a>
+      </div>
+    </div>
+  </section>
 
-</td></tr>
-</table>
+  <!-- FOOTER & CONTACT -->
+  <footer id="contact">
+    <h3>Get in Touch</h3>
+    <p>Interested in collaboration, opportunities, or research discussions?</p>
+    <p style="margin-top: 1.5rem;">
+      <a href="mailto:aadya.arora@iitgn.ac.in">📧 aadya.arora@iitgn.ac.in</a>
+    </p>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">
+      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ">Google Scholar</a> • 
+      <a href="https://github.com/AADYA-ARORA">GitHub</a> • 
+      <a href="https://www.linkedin.com/in/aadya-arora-069253259/">LinkedIn</a> • 
+      <a href="https://aadya-arora.github.io/">Website</a>
+    </p>
+    <p style="margin-top: 2rem; font-size: 0.85rem; opacity: 0.7;">© 2025 Aadya Arora. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
