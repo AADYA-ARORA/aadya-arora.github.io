@@ -3,59 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aadya Arora | Researcher | CV/ML </title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Aadya Arora — AI Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    :root {
+      --ink: #1a1a1a;
+      --ink-muted: #555;
+      --ink-faint: #999;
+      --bg: #fafaf8;
+      --surface: #f4f3ef;
+      --surface-2: #eeecea;
+      --accent: #7c6fcd;
+      --accent-light: #f0eefb;
+      --rule: #dddbd5;
+      --white: #ffffff;
     }
 
-    :root {
-      --primary-color: #8b7ddc;
-      --primary-hover: #7a6bc9;
-      --secondary-color: #d4a5d4;
-      --text-primary: #2a2a2a;
-      --text-secondary: #666;
-      --text-light: #999;
-      --bg-light: #f5f0ff;
-      --bg-white: #ffffff;
-      --border-color: #e8dff5;
-      --accent-blue: #a8c5f5;
-      --accent-purple: #d4a5d4;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      color: var(--text-primary);
-      background-color: var(--bg-white);
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 15px;
     }
 
-    /* ============ HEADER ============ */
-    header {
-      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-      border-bottom: 1px solid var(--border-color);
-      padding: 2rem 0;
+    /* ── NAV ── */
+    nav {
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 200;
+      background: rgba(250,250,248,0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--rule);
+      padding: 0 2rem;
     }
 
-    nav {
-      max-width: 1100px;
+    .nav-inner {
+      max-width: 900px;
       margin: 0 auto;
-      padding: 0 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 56px;
     }
 
-    .logo {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--text-primary);
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      color: var(--ink);
+      text-decoration: none;
     }
 
     .nav-links {
@@ -65,712 +65,747 @@
     }
 
     .nav-links a {
-      text-decoration: none;
-      color: var(--text-secondary);
+      font-size: 0.85rem;
       font-weight: 500;
-      font-size: 0.95rem;
-      transition: color 0.3s;
+      color: var(--ink-muted);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: color 0.2s;
     }
 
-    .nav-links a:hover {
-      color: var(--primary-color);
-    }
+    .nav-links a:hover { color: var(--accent); }
 
-    /* ============ HERO SECTION ============ */
+    /* ── HERO ── */
     .hero {
-      max-width: 1100px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 4rem 2rem;
+      padding: 5rem 2rem 4rem;
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 3rem;
-      align-items: center;
+      grid-template-columns: 1fr 200px;
+      gap: 4rem;
+      align-items: start;
     }
 
-    .hero-content h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .hero-content .subtitle {
-      font-size: 1.1rem;
-      color: var(--primary-color);
+    .hero-eyebrow {
+      font-size: 0.8rem;
       font-weight: 600;
-      margin-bottom: 1.5rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
     }
 
-    .hero-content p {
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-      line-height: 1.8;
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3.4rem;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-desc {
+      color: var(--ink-muted);
       font-size: 1rem;
+      line-height: 1.8;
+      max-width: 520px;
+      margin-bottom: 1.6rem;
     }
 
-    .cta-buttons {
+    .hero-highlight {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 3px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-links {
       display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
+      gap: 1.2rem;
       flex-wrap: wrap;
     }
 
-    .btn {
-      padding: 0.8rem 1.8rem;
-      border: none;
+    .hero-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .hero-links a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .hero-photo {
+      width: 180px;
+      height: 180px;
       border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 0.95rem;
-    }
-
-    .btn-primary {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--primary-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 16px rgba(45, 89, 235, 0.25);
-    }
-
-    .btn-secondary {
-      background-color: transparent;
-      color: var(--primary-color);
-      border: 2px solid var(--primary-color);
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .social-links a {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: var(--bg-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: var(--primary-color);
-      transition: all 0.3s;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .social-links a:hover {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    .hero-image {
-      text-align: center;
-    }
-
-    .hero-image img {
-      width: 280px;
-      height: 280px;
-      border-radius: 12px;
       object-fit: cover;
-      box-shadow: 0 16px 40px rgba(45, 89, 235, 0.15);
+      display: block;
+      border: 1px solid var(--rule);
+      margin-top: 0.5rem;
     }
 
-    /* ============ SECTION STYLES ============ */
-    section {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
-      border-top: 1px solid var(--border-color);
-    }
-
-    section h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: var(--text-primary);
-    }
-
-    /* ============ ABOUT SECTION ============ */
-    .about-content {
+    /* ── DIVIDER ── */
+    .page-rule {
       max-width: 900px;
       margin: 0 auto;
-      background-color: var(--bg-light);
-      padding: 3rem 3.5rem;
-      border-radius: 18px;
+      border: none;
+      border-top: 1px solid var(--rule);
     }
 
-    .about-text {
-      max-width: 720px;
+    /* ── SECTION ── */
+    .section {
+      max-width: 900px;
       margin: 0 auto;
+      padding: 3.5rem 2rem;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      margin-bottom: 2rem;
+      color: var(--ink);
+    }
+
+    /* ── ABOUT ── */
+    .about-body {
+      max-width: 680px;
     }
 
     .about-text p {
-      margin-bottom: 1.5rem;
-      color: var(--text-secondary);
-      line-height: 1.9;
-      font-size: 1.02rem;
+      color: var(--ink-muted);
+      margin-bottom: 1.2rem;
+      line-height: 1.85;
     }
 
-    /* ============ PUBLICATIONS ============ */
-    .publications-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
-    }
-
-    .publication-card {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      gap: 2rem;
-      padding: 2rem;
-      background-color: var(--bg-light);
-      border-radius: 10px;
-      transition: all 0.3s;
-    }
-
-    .publication-card:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      transform: translateY(-2px);
-    }
-
-    .publication-image {
-      width: 100%;
-      max-height: 220px;
-      background-color: var(--border-color);
-      border-radius: 8px;
-      overflow: hidden;
+    .about-stats {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.5rem;
-      color: var(--text-light);
-      font-size: 0.9rem;
+      flex-direction: column;
+      gap: 1.2rem;
     }
 
-    .publication-image img {
-      max-width: 100%;
-      max-height: 200px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
-
-    .publication-content h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-      color: var(--text-primary);
-    }
-
-    .publication-meta {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .badge {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 0.4rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    .badge.venue {
-      background-color: var(--secondary-color);
-    }
-
-    .publication-content p {
-      color: var(--text-secondary);
-      margin-bottom: 1rem;
-      line-height: 1.7;
-    }
-
-    .publication-links {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .publication-links a {
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: all 0.3s;
-    }
-
-    .publication-links a:hover {
-      color: var(--secondary-color);
-    }
-
-    /* ============ EXPERIENCE ============ */
-    .experience-timeline {
-      position: relative;
-      padding: 2rem 0;
-    }
-
-    .experience-item {
-      padding: 2rem;
-      margin-bottom: 2rem;
-      background-color: var(--bg-light);
-      border-left: 4px solid var(--primary-color);
+    .stat-item {
+      background: var(--surface);
       border-radius: 6px;
-      position: relative;
+      padding: 1.2rem 1.4rem;
+      border-left: 3px solid var(--accent);
     }
 
-    .experience-item h3 {
-      font-size: 1.1rem;
-      color: var(--text-primary);
+    .stat-number {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.9rem;
+      color: var(--ink);
+      line-height: 1;
       margin-bottom: 0.3rem;
     }
 
-    .experience-item .company {
-      color: var(--primary-color);
-      font-weight: 600;
+    .stat-desc {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+    }
+
+    /* ── PUBLICATIONS ── */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .pub-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 1.6rem 2rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .pub-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+
+    .pub-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
       margin-bottom: 0.5rem;
     }
 
-    .experience-item .duration {
-      color: var(--text-light);
+    .pub-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .pub-venue {
+      flex-shrink: 0;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.3rem 0.7rem;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    .pub-venue.under-review {
+      background: var(--surface-2);
+      color: var(--ink-muted);
+    }
+
+    .pub-authors {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .pub-authors strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .pub-desc {
       font-size: 0.9rem;
-      margin-bottom: 1rem;
+      color: var(--ink-muted);
+      line-height: 1.7;
+      margin-bottom: 0.8rem;
     }
 
-    .experience-item ul {
+    .pub-meta {
+      font-size: 0.78rem;
+      color: var(--ink-faint);
+      font-style: italic;
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 0.8rem;
+    }
+
+    .pub-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .pub-links a:hover { border-color: var(--accent); }
+
+    /* ── EXPERIENCE ── */
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 2rem;
+      padding: 1.8rem 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .exp-item:last-child { border-bottom: 1px solid var(--rule); }
+
+    .exp-meta {
+      padding-top: 0.2rem;
+    }
+
+    .exp-date {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+      line-height: 1.5;
+    }
+
+    .exp-org {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.4rem;
+    }
+
+    .exp-role {
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .exp-points {
       list-style: none;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
     }
 
-    .experience-item li {
-      color: var(--text-secondary);
-      margin-bottom: 0.7rem;
-      padding-left: 1.5rem;
+    .exp-points li {
+      font-size: 0.88rem;
+      color: var(--ink-muted);
+      padding-left: 1.2rem;
       position: relative;
+      line-height: 1.65;
     }
 
-    .experience-item li:before {
-      content: "→";
+    .exp-points li::before {
+      content: "–";
       position: absolute;
       left: 0;
-      color: var(--primary-color);
-      font-weight: bold;
+      color: var(--accent);
     }
 
-    /* ============ SKILLS ============ */
-    .skills-grid {
+    /* ── ACHIEVEMENTS ── */
+    .ach-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1rem;
     }
 
-    .skill-category {
-      padding: 2rem;
-      background-color: var(--bg-light);
-      border-radius: 10px;
-      border-top: 3px solid var(--primary-color);
+    .ach-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+      transition: box-shadow 0.2s;
     }
 
-    .skill-category h3 {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
+    .ach-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+
+    .ach-badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
     }
 
-    .skill-list {
+    .ach-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .ach-desc {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
+      line-height: 1.6;
+    }
+
+    /* ── SKILLS ── */
+    .skills-body {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-group h3 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 0.8rem;
+    }
+
+    .skill-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
+      gap: 0.5rem;
     }
 
     .skill-tag {
-      background-color: white;
-      color: var(--primary-color);
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      border: 1px solid var(--primary-color);
-      transition: all 0.3s;
+      font-size: 0.82rem;
+      background: var(--surface);
+      color: var(--ink-muted);
+      padding: 0.3rem 0.7rem;
+      border-radius: 3px;
+      border: 1px solid var(--rule);
     }
 
-    .skill-tag:hover {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    /* ============ ACHIEVEMENTS ============ */
-    .achievements-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .achievement-card {
-      padding: 2rem;
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-      color: white;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 8px 24px rgba(45, 89, 235, 0.2);
-      transition: all 0.3s;
-    }
-
-    .achievement-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(45, 89, 235, 0.3);
-    }
-
-    .achievement-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .achievement-card h3 {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .achievement-card p {
-      font-size: 0.9rem;
-      opacity: 0.95;
-    }
-
-    /* ============ CV SECTION ============ */
-    .cv-download {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 3rem 2rem;
-    }
-
-    .cv-card {
-      padding: 2.5rem;
-      background-color: var(--bg-light);
-      border-radius: 10px;
-      text-align: center;
-      transition: all 0.3s;
-      flex: 1;
-      max-width: 350px;
-    }
-
-    .cv-card:hover {
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-      transform: translateY(-4px);
-    }
-
-    .cv-card h3 {
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    .cv-card p {
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-    }
-
-    /* ============ FOOTER ============ */
+    /* ── FOOTER ── */
     footer {
-      background-color: var(--text-primary);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      border-top: 1px solid var(--border-color);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
-    footer a {
-      color: var(--primary-color);
+    .footer-left {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .footer-left span {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      color: var(--ink-faint);
+      margin-top: 0.3rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--ink-muted);
       text-decoration: none;
-      transition: color 0.3s;
+      transition: color 0.2s;
     }
 
-    footer a:hover {
-      color: var(--secondary-color);
-    }
+    .footer-links a:hover { color: var(--accent); }
 
-    /* ============ RESPONSIVE ============ */
-    @media (max-width: 768px) {
+    /* ── RESPONSIVE ── */
+    @media (max-width: 680px) {
       .hero {
         grid-template-columns: 1fr;
-        padding: 2rem;
+        padding: 3rem 1.5rem 2.5rem;
       }
 
-      .hero-content h1 {
-        font-size: 2rem;
+      .hero h1 { font-size: 2.4rem; }
+
+      .hero-photo {
+        width: 130px;
+        height: 130px;
+        order: -1;
       }
 
-      .hero-image img {
-        width: 200px;
-        height: 200px;
-      }
-
-      .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
-      }
-
-      .about-content {
-        padding: 2.5rem 1.8rem;
-      }
-
-      .publication-card {
+      .about-body {
         grid-template-columns: 1fr;
+        gap: 2rem;
       }
 
-      .publication-image {
-        max-height: 260px;
-      }
-
-      section {
-        padding: 2.5rem 1rem;
-      }
-
-      section h2 {
-        font-size: 1.6rem;
-      }
-
-      .cta-buttons {
-        flex-direction: column;
-      }
-
-      .btn {
-        width: 100%;
-        text-align: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-      body {
-        font-size: 14px;
-      }
-
-      .hero-content h1 {
-        font-size: 1.6rem;
-      }
-
-      .nav-links {
-        flex-direction: column;
+      .exp-item {
+        grid-template-columns: 1fr;
         gap: 0.5rem;
       }
 
-      nav {
+      .section { padding: 2.5rem 1.5rem; }
+
+      footer {
         flex-direction: column;
-        gap: 1rem;
+        align-items: flex-start;
+        padding: 2rem 1.5rem;
       }
 
-      .skill-tag {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
-      }
+      .pub-top { flex-direction: column; }
     }
   </style>
 </head>
-
 <body>
-  <!-- NAVIGATION -->
-  <header>
-    <nav>
-      <div class="logo">Aadya Arora</div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Aadya Arora</a>
       <ul class="nav-links">
         <li><a href="#publications">Publications</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <p class="hero-eyebrow">AI Researcher · Computer Vision · Medical Imaging</p>
       <h1>Aadya Arora</h1>
-      <p class="subtitle">AI Researcher | CV/ML | Medical Imaging</p>
-      
-      <p>Final-year undergraduate at <strong>IIT Gandhinagar</strong>, majoring in Electrical Engineering with a Minor in AI. Passionate about <strong>Computer Vision, Machine Learning, and Generative AI</strong> with applications in healthcare and multimodal perception.</p>
-      
-      <p><strong>Incoming Data Scientist at Microsoft IDC (2026)</strong></p>
-
-      <div class="cta-buttons">
-        <a href="#publications" class="btn btn-primary">View Research</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-      </div>
-
-      <div class="social-links">
-        <a href="mailto:aadya.arora@iitgn.ac.in" title="Email">📧</a>
-        <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank" title="Google Scholar">🎓</a>
-        <a href="https://github.com/AADYA-ARORA" target="_blank" title="GitHub">💻</a>
-        <a href="https://www.linkedin.com/in/aadya-arora-069253259/" target="_blank" title="LinkedIn">🔗</a>
-        <a href="https://aadya-arora.github.io/" target="_blank" title="Website">🌐</a>
+      <p class="hero-desc">
+        Final-year undergraduate at <strong>IIT Gandhinagar</strong> (Electrical Engineering, Minor in AI).
+        My research sits at the intersection of vision-language models, medical imaging, and generative AI —
+        with a focus on building efficient, interpretable systems for real-world healthcare deployment.
+      </p>
+      <div class="hero-highlight">Incoming PhD · Johns Hopkins University (EECS) · Medical AI</div>
+      <div class="hero-links">
+        <a href="mailto:aadya.arora@iitgn.ac.in">Email</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/aadya-arora-069253259/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/aadya_resume_full.pdf" target="_blank">CV (PDF)</a>
       </div>
     </div>
+    <img
+      class="hero-photo"
+      src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/IMG_0661.jpg"
+      alt="Aadya Arora"
+    >
+  </div>
 
-    <div class="hero-image">
-      <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/IMG_0661.jpg"
-           alt="Aadya Arora">
-    </div>
-  </section>
+  <hr class="page-rule">
 
-  <!-- ABOUT SECTION -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
+  <!-- ABOUT -->
+  <div class="section" id="about">
+    <p class="section-label">About</p>
+    <div class="about-body">
       <div class="about-text">
-        <p>I'm a machine learning researcher focused on <strong>vision-language models, medical imaging, and generative AI</strong>. My work bridges computer vision and AI, with applications in healthcare diagnostics and autonomous systems.</p>
-        <p>Through internships at <strong>IISc Bangalore, University of Bath, IIIT Hyderabad, and Microsoft IDC</strong>, I've developed expertise in diffusion models, few-shot learning, document AI, and anomaly detection.</p>
-        <p>Beyond research, I'm passionate about making AI more <strong>interpretable, robust, and practical</strong> for real-world applications.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PUBLICATIONS SECTION -->
-  <section id="publications">
-    <h2>Featured Publications</h2>
-    <div class="publications-grid">
-      
-      <div class="publication-card">
-        <div class="publication-image">
-          <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/medclip.png"
-               alt="MedFocusCLIP medical imaging">
-        </div>
-        <div class="publication-content">
-          <h3>MedFocusCLIP: Few-Shot Medical Classification with Pixel-Wise Attention</h3>
-          <div class="publication-meta">
-            <span class="badge venue">ICASSP 2025</span>
-          </div>
-          <p><strong>Aadya Arora</strong>, Vinay Namboodiri</p>
-          <p>Integrated SAM-based pixel attention with CLIP for interpretable and robust few-shot medical image classification. Demonstrates improved performance on medical datasets through attention mechanism visualization.</p>
-          <div class="publication-links">
-            <a href="#">📄 Paper</a>
-            <a href="https://github.com/AADYA-ARORA">💻 GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="publication-card">
-        <div class="publication-image">
-          <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/Wavshadow.png"
-               alt="WavShadow shadow removal">
-        </div>
-        <div class="publication-content">
-          <h3>WavShadow: Wavelet-Based Shadow Segmentation and Removal</h3>
-          <div class="publication-meta">
-            <span class="badge venue">ICVGIP 2024</span>
-          </div>
-          <p><strong>S. Jain*</strong>, <strong>Aadya Arora*</strong>, V. Vekaria, K. Gandhi, S. Raman</p>
-          <p>Proposed a wavelet-enhanced pipeline for shadow detection and removal, achieving state-of-the-art performance. Novel approach combining frequency-domain analysis with deep learning.</p>
-          <div class="publication-links">
-            <a href="#">📄 Paper</a>
-            <a href="#">🔗 arXiv</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="publication-card">
-        <div class="publication-image">
-          <img src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/tempest.png"
-               alt="TEMPEST battery chemistry">
-        </div>
-        <div class="publication-content">
-          <h3>Battery Chemistry Recommendation using Machine Learning</h3>
-          <div class="publication-meta">
-            <span class="badge">Under Review</span>
-            <span class="badge venue">IEEE IAS Journal</span>
-          </div>
-          <p><strong>Aadya Arora</strong>, S. Patil, P. Bhardwaj</p>
-          <p>Introduced TEMPEST, an LSTM-based framework for predicting internal battery temperature and recommending optimal chemistry. Applied to EV and grid storage systems.</p>
-          <div class="publication-links">
-            <a href="https://github.com/AADYA-ARORA/EE499">💻 GitHub</a>
-          </div>
-        </div>
+        <p>
+          I work on <strong>vision-language models, diffusion-based generative AI,</strong> and
+          <strong>few-shot medical image classification</strong>. Through research stints at IISc Bangalore,
+          University of Bath, IIIT Hyderabad, and an internship at Microsoft IDC, I've built expertise spanning
+          diffusion transformers, attention-based image editing, document AI, and autonomous driving anomaly detection.
+        </p>
+        <p>
+          I care deeply about making AI systems that are not just accurate, but interpretable and robust enough
+          for deployment at population scale — especially in healthcare settings where reliability directly
+          impacts lives.
+        </p>
+        <p>
+          Beyond research, I serve as an IEEE reviewer, teach ML and probability courses, and lead
+          career development initiatives at IITGN's Professional Development Council.
+        </p>
       </div>
 
     </div>
-  </section>
+  </div>
 
-  <!-- EXPERIENCE SECTION -->
-  <section id="experience">
-    <h2>Work & Research Experience</h2>
-    <div class="experience-timeline">
-      
-      <div class="experience-item">
-        <h3>Data Scientist Intern</h3>
-        <div class="company">Microsoft IDC</div>
-        <div class="duration">May – July 2025</div>
-        <ul>
-          <li>Developed LLM-driven system translating natural language into PowerPoint formatting commands</li>
-          <li>Built scalable structured data pipelines and evaluation frameworks</li>
-          <li>Improved robustness on complex formatting tasks through error analysis</li>
-        </ul>
+  <hr class="page-rule">
+
+  <!-- PUBLICATIONS -->
+  <div class="section" id="publications">
+    <p class="section-label">Research</p>
+    <h2 class="section-title">Publications</h2>
+    <div class="pub-list">
+
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets using Pixel-Wise Attention</div>
+          <div class="pub-venue">IEEE ICASSP 2025</div>
+        </div>
+        <p class="pub-authors"><strong>A. Arora</strong>, V. Namboodiri</p>
+        <p class="pub-desc">Integrated SAM-based pixel attention with CLIP for interpretable and robust few-shot medical image classification. Demonstrates improved performance through attention mechanism visualisation.</p>
+        <p class="pub-meta">Flagship IEEE SPS Conference · CORE A · h5-index: 110</p>
+        <div class="pub-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">ArXiv →</a>
+          <a href="https://github.com/AADYA-ARORA" target="_blank">Code →</a>
+        </div>
       </div>
 
-      <div class="experience-item">
-        <h3>Research Intern: Diffusion Transformers</h3>
-        <div class="company">Indian Institute of Science (IISc) Bangalore</div>
-        <div class="duration">Dec 2024 – Apr 2025</div>
-        <ul>
-          <li>Performed layer-wise ablation of Diffusion Image Transformers (DiTs)</li>
-          <li>Analyzed attention mechanisms for prompt adherence and semantic control</li>
-          <li>Developed training-free image editing techniques via attention manipulation</li>
-        </ul>
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">WavShadow: Wavelet-Based Shadow Segmentation and Removal</div>
+          <div class="pub-venue">ICVGIP 2024</div>
+        </div>
+        <p class="pub-authors">S. Jain*, <strong>A. Arora*</strong>, V. Vekaria, K. Gandhi, S. Raman &nbsp;<em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em></p>
+        <p class="pub-desc">Wavelet-enhanced pipeline for shadow detection and removal, achieving state-of-the-art performance by combining frequency-domain analysis with deep learning.</p>
+        <p class="pub-meta">Premier Indian Conference in Computer Vision · h5-index: 18</p>
+        <div class="pub-links">
+          <a href="#" target="_blank">ArXiv →</a>
+        </div>
       </div>
 
-      <div class="experience-item">
-        <h3>Research Intern: Vision-Language Models</h3>
-        <div class="company">University of Bath</div>
-        <div class="duration">May – July 2024</div>
-        <ul>
-          <li>Implemented open-vocabulary few-shot referring image segmentation</li>
-          <li>Integrated HIPIE adapters with CLIP for improved generalization</li>
-          <li>Achieved 85.15 mIoU on RefCOCO(+) benchmark</li>
-        </ul>
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">TEMPEST: A Machine Learning Framework for Battery Thermal Prediction and Chemistry Selection</div>
+          <div class="pub-venue">IEEE TIA 2026</div>
+        </div>
+        <p class="pub-authors"><strong>A. Arora*</strong>, S. Patil*, P. Bhardwaj &nbsp;<em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em></p>
+        <p class="pub-desc">LSTM-based framework for predicting internal battery temperature and recommending optimal chemistry for EV and grid storage systems.</p>
+        <p class="pub-meta">Q1 Journal · Impact Factor: 4.4 · h5-index: 78</p>
+        <div class="pub-links">
+          <a href="https://github.com/AADYA-ARORA/EE499" target="_blank">IEEEXplore →</a>
+          <a href="https://github.com/AADYA-ARORA/EE499" target="_blank">Code →</a>
+        </div>
       </div>
 
-      <div class="experience-item">
-        <h3>Research Intern: Autonomous Driving</h3>
-        <div class="company">IIIT Hyderabad & IIT Hyderabad</div>
-        <div class="duration">Dec 2023 – Jan 2024</div>
-        <ul>
-          <li>Analyzed corner cases in Indian traffic datasets (IDD, CODA)</li>
-          <li>Used class-agnostic RPNs for anomaly discovery in unstructured environments</li>
-          <li>Identified edge cases critical for robust autonomous systems</li>
-        </ul>
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">Battery ETHOS: Electro-Thermal Model for State Estimation</div>
+          <div class="pub-venue under-review">Under Review · IEEE COMPEL 2026</div>
+        </div>
+        <p class="pub-authors">S. Patil*, <strong>A. Arora*</strong>, P. Bhardwaj &nbsp;<em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em></p>
+        <p class="pub-desc">Electro-thermal modelling approach for accurate battery state estimation, extending the TEMPEST framework.</p>
+        <p class="pub-meta">Q2 Journal · Impact Factor: 1.5 · h5-index: 25</p>
+        <div class="pub-links">
+          <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub →</a>
+        </div>
       </div>
 
     </div>
-  </section>
+  </div>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills">
-    <h2>Skills & Expertise</h2>
-    <div class="skills-grid">
-      
-      <div class="skill-category">
-        <h3>Programming Languages</h3>
-        <div class="skill-list">
+  <hr class="page-rule">
+
+  <!-- EXPERIENCE -->
+  <div class="section" id="experience">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Internships & Research</h2>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">May – July 2024</div>
+          <div class="exp-org">Microsoft IDC</div>
+        </div>
+        <div>
+          <p class="exp-role">Data Scientist Intern <em style="font-weight:400;color:var(--ink-faint);font-size:0.85rem">(Received Full-Time PPO)</em></p>
+          <ul class="exp-points">
+            <li>Worked with the Copilot team for PowerPoint; integrated AI to improve structured presentation creation.</li>
+            <li>Built datasets by extracting and structuring text & formatting info from slides in JSON format.</li>
+            <li>Developed data pipelines to generate diverse formatting examples; improved model performance through error analysis, leading to a Pre-Placement Offer.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Dec 2024 – Apr 2025</div>
+          <div class="exp-org">IISc Bangalore · VAL Lab</div>
+        </div>
+        <div>
+          <p class="exp-role">Research Intern — Diffusion Transformers</p>
+          <ul class="exp-points">
+            <li>Layer-wise ablation of Diffusion Image Transformers (DiTs); studied how features evolve for structure vs. style.</li>
+            <li>Designed unified attention masks to reduce prompt leakage in multi-region text-to-image generation.</li>
+            <li>Ran LoRA and DreamBooth experiments to understand editing behaviour at different transformer depths.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">May – July 2024</div>
+          <div class="exp-org">University of Bath</div>
+        </div>
+        <div>
+          <p class="exp-role">Research Intern — Vision-Language Models</p>
+          <ul class="exp-points">
+            <li>Developed AdaptHIPIE: lightweight adapters into HIPIE for open-vocabulary referring segmentation.</li>
+            <li>Achieved 85.15 mIoU on RefCOCO, improving visual-text alignment with CLIP features.</li>
+            <li>Concurrently developed MedFocusCLIP, rethinking annotation-efficient methods for the medical domain.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Dec 2023 – Jan 2024</div>
+          <div class="exp-org">IIIT Hyderabad · CVIT Lab</div>
+        </div>
+        <div>
+          <p class="exp-role">Research Intern — Autonomous Driving</p>
+          <ul class="exp-points">
+            <li>Analysed corner cases in Indian traffic datasets (IDD, CODA) for unstructured environments.</li>
+            <li>Used class-agnostic RPNs to capture anomalous instances beyond predefined categories.</li>
+            <li>Built a pipeline using semantic segmentation & common-class suppression to surface safety-critical anomalies.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="page-rule">
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section" id="achievements">
+    <p class="section-label">Recognition</p>
+    <h2 class="section-title">Achievements</h2>
+    <div class="ach-grid">
+
+      <div class="ach-card">
+        <div class="ach-badge">PhD Offer</div>
+        <div class="ach-title">Johns Hopkins University</div>
+        <p class="ach-desc">Fully funded PhD position in EECS to specialise in Medical AI (Ranked #24 globally, #1 for Medical AI).</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Industry</div>
+        <div class="ach-title">Microsoft PPO — Data Scientist</div>
+        <p class="ach-desc">Secured full-time Pre-Placement Offer at Microsoft IDC with highest compensation in a tech role from IITGN.</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Publication</div>
+        <div class="ach-title">ICASSP 2025 · Cash Prize</div>
+        <p class="ach-desc">Only B.Tech student in the batch to publish at IEEE's flagship SPS conference. Awarded ₹25k cash prize by IITGN.</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Service</div>
+        <div class="ach-title">IEEE Reviewer</div>
+        <p class="ach-desc">Official reviewer for IEEE Signal Processing Letters (2025–present). Completed 4 technical peer-reviews to date.</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Invitation</div>
+        <div class="ach-title">Microsoft Research India Summit 2025</div>
+        <p class="ach-desc">One of few students nationwide selected for India's premier annual AI academic summit.</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Competition</div>
+        <div class="ach-title">Inter-IIT Tech Meet — Top 3</div>
+        <p class="ach-desc">Ranked Top 3 for Research Paper Poster across all 23 IITs in EE and CSE domains.</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Teaching</div>
+        <div class="ach-title">Teaching Assistant × 3 Courses</div>
+        <p class="ach-desc">TA for Machine Learning (250+ students), Probability & Data Visualization (400+ students), and Principles of EE.</p>
+      </div>
+
+      <div class="ach-card">
+        <div class="ach-badge">Outreach</div>
+        <div class="ach-title">Featured in Quill Magazine</div>
+        <p class="ach-desc">Featured in the April 2026 edition; also served as Problem Statement Setter for IITGN's flagship HackRush '26.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="page-rule">
+
+  <!-- SKILLS -->
+  <div class="section" id="skills">
+    <p class="section-label">Expertise</p>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-body">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skill-tags">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">C++</span>
           <span class="skill-tag">C</span>
           <span class="skill-tag">MATLAB</span>
         </div>
       </div>
-
-      <div class="skill-category">
-        <h3>Deep Learning & ML</h3>
-        <div class="skill-list">
+      <div class="skill-group">
+        <h3>Deep Learning</h3>
+        <div class="skill-tags">
           <span class="skill-tag">CNNs</span>
           <span class="skill-tag">Vision Transformers</span>
           <span class="skill-tag">CLIP</span>
@@ -779,22 +814,19 @@
           <span class="skill-tag">LSTMs</span>
         </div>
       </div>
-
-      <div class="skill-category">
-        <h3>Frameworks & Tools</h3>
-        <div class="skill-list">
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <div class="skill-tags">
           <span class="skill-tag">PyTorch</span>
           <span class="skill-tag">TensorFlow</span>
           <span class="skill-tag">OpenCV</span>
           <span class="skill-tag">mmDetection</span>
-          <span class="skill-tag">DeepLabv3+</span>
           <span class="skill-tag">Azure OpenAI</span>
         </div>
       </div>
-
-      <div class="skill-category">
+      <div class="skill-group">
         <h3>Domains</h3>
-        <div class="skill-list">
+        <div class="skill-tags">
           <span class="skill-tag">Computer Vision</span>
           <span class="skill-tag">Medical Imaging</span>
           <span class="skill-tag">Generative AI</span>
@@ -802,72 +834,22 @@
           <span class="skill-tag">Autonomous Driving</span>
         </div>
       </div>
-
     </div>
-  </section>
+  </div>
 
-  <!-- ACHIEVEMENTS SECTION -->
-  <section id="achievements">
-    <h2>Key Achievements</h2>
-    <div class="achievements-grid">
-      <div class="achievement-card">
-        <div class="achievement-icon">🏆</div>
-        <h3>Microsoft PPO</h3>
-        <p>Pre-Placement Offer as Data Scientist</p>
-      </div>
-
-      <div class="achievement-card">
-        <div class="achievement-icon">🎓</div>
-        <h3>IEEE Reviewer</h3>
-        <p>Signal Processing Letters (2025–Present)</p>
-      </div>
-
-      <div class="achievement-card">
-        <div class="achievement-icon">📚</div>
-        <h3>Teaching Assistant</h3>
-        <p>Machine Learning; Probability, Statistics &amp; Data Visualization</p>
-      </div>
-
-      <div class="achievement-card">
-        <div class="achievement-icon">🎯</div>
-        <h3>Microsoft Research Summit</h3>
-        <p>Invited to MSRI Academic Summit 2025</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CV SECTION -->
-  <section id="cv-download">
-    <h2>Curriculum Vitae</h2>
-    <div class="cv-download">
-      <div class="cv-card">
-        <h3>📄 Full CV</h3>
-        <p>Download my complete CV with detailed research, publications, and academic background.</p>
-        <a href="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/aadya_resume_full.pdf" class="btn btn-primary">Download PDF</a>
-      </div>
-
-      <div class="cv-card">
-        <h3>📋 Research Summary</h3>
-        <p>Quick overview of research interests, key publications, and current work focus areas.</p>
-        <a href="#" class="btn btn-primary">View Summary</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER & CONTACT -->
+  <!-- FOOTER -->
   <footer id="contact">
-    <h3>Get in Touch</h3>
-    <p>Interested in collaboration, opportunities, or research discussions?</p>
-    <p style="margin-top: 1.5rem;">
-      <a href="mailto:aadya.arora@iitgn.ac.in">📧 aadya.arora@iitgn.ac.in</a>
-    </p>
-    <p style="margin-top: 1rem; font-size: 0.9rem;">
-      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ">Google Scholar</a> • 
-      <a href="https://github.com/AADYA-ARORA">GitHub</a> • 
-      <a href="https://www.linkedin.com/in/aadya-arora-069253259/">LinkedIn</a> • 
-      <a href="https://aadya-arora.github.io/">Website</a>
-    </p>
-    <p style="margin-top: 2rem; font-size: 0.85rem; opacity: 0.7;">© 2025 Aadya Arora. All rights reserved.</p>
+    <div class="footer-left">
+      Aadya Arora
+      <span>aadya.arora@iitgn.ac.in · +91-9310499169</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">Scholar</a>
+      <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/aadya-arora-069253259/" target="_blank">LinkedIn</a>
+      <a href="https://aadya-arora.github.io/" target="_blank">Website</a>
+      <a href="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/aadya_resume_full.pdf" target="_blank">CV</a>
+    </div>
   </footer>
 
 </body>
