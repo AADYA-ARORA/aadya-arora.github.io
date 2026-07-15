@@ -1,588 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aadya Arora</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400&fam… rel="stylesheet">
-  <style>
-    :root {
-      --ink: #3a3550;
-      --ink-muted: #6d6885;
-      --ink-faint: #a9a5bd;
-      --bg: #fdfcff;
-      --white: #ffffff;
-      --rule: #f0ecf8;
- 
-      --violet: #b3a4f0;
-      --violet-deep: #8f7ce0;
-      --pink: #f5b8d0;
-      --coral: #fcc6b0;
-      --amber: #ffe0a3;
-      --teal: #a8e6d8;
-      --sky: #b8dcf5;
- 
-      --grad-hero: linear-gradient(135deg, #c9bdf5 0%, #f5c2d8 55%, #fcd4c0 100%);
-      --grad-violet: linear-gradient(135deg, #c4b6f5, #ddd3fb);
-      --grad-pink: linear-gradient(135deg, #f7c3d8, #fcdcc9);
-      --grad-teal: linear-gradient(135deg, #b3ead d, #c3e4f7);
-      --grad-teal: linear-gradient(135deg, #b3eadd, #c3e4f7);
-      --grad-amber: linear-gradient(135deg, #ffe4ad, #fcccb3);
-    }
- 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
- 
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.7;
-      font-size: 16px;
-      overflow-x: hidden;
-    }
- 
-    a { color: inherit; }
- 
-    .wrap { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
- 
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(253,252,255,0.8);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--rule);
-    }
-    .nav-inner {
-      display: flex; justify-content: space-between; align-items: center;
-      height: 60px; gap: 1rem; max-width: 760px; margin: 0 auto; padding: 0 1.5rem;
-    }
-    .nav-logo {
-      font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.15rem;
-      text-decoration: none;
-      background: var(--grad-hero); -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .nav-links { display: flex; gap: 1.4rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.85rem; font-weight: 600; color: var(--ink-muted);
-      text-decoration: none; transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--violet-deep); }
- 
-    /* ── HERO ── */
-    .hero {
-      position: relative; text-align: center;
-      padding: 4rem 1.5rem 3.5rem; overflow: hidden;
-    }
-    .hero::before {
-      content: ""; position: absolute; inset: 0;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(201,189,245,0.35), transparent 42%),
-        radial-gradient(circle at 85% 15%, rgba(245,194,216,0.35), transparent 42%),
-        radial-gradient(circle at 50% 90%, rgba(179,234,221,0.3), transparent 45%);
-      z-index: -1;
-    }
-    .hero-photo-ring {
-      width: 138px; height: 138px; margin: 0 auto 1.5rem;
-      border-radius: 50%; padding: 4px;
-      background: var(--grad-hero);
-      box-shadow: 0 12px 34px rgba(179,164,240,0.4);
-    }
-    .hero-photo {
-      width: 100%; height: 100%; border-radius: 50%;
-      object-fit: cover; display: block; border: 4px solid var(--white);
-    }
-    .hero h1 {
-      font-family: 'Fraunces', serif; font-weight: 600;
-      font-size: 3rem; line-height: 1.05; margin-bottom: 1.3rem;
-      letter-spacing: -0.02em;
-      background: var(--grad-hero); -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .hero-desc { color: var(--ink-muted); max-width: 540px; margin: 0 auto 1.6rem; }
-    .hero-desc strong { color: var(--ink); font-weight: 700; }
-    .hero-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: var(--white); border: 1px solid var(--rule);
-      color: var(--ink); font-weight: 600; font-size: 0.85rem;
-      padding: 0.5rem 1rem; border-radius: 999px; margin-bottom: 2rem;
-      box-shadow: 0 6px 18px rgba(179,164,240,0.18);
-    }
-    .hero-badge::before {
-      content: ""; width: 9px; height: 9px; border-radius: 50%;
-      background: var(--grad-teal); box-shadow: 0 0 0 4px rgba(168,230,216,0.35);
-    }
-    .hero-links { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; }
-    .hero-links a {
-      font-size: 0.85rem; font-weight: 600; color: var(--ink-muted);
-      text-decoration: none; padding: 0.5rem 1.1rem;
-      border: 1px solid var(--rule); border-radius: 999px; background: var(--white);
-      transition: transform 0.18s, color 0.18s, border-color 0.18s, box-shadow 0.18s;
-    }
-    .hero-links a:hover {
-      color: var(--violet-deep); border-color: var(--violet);
-      transform: translateY(-2px); box-shadow: 0 8px 18px rgba(179,164,240,0.25);
-    }
- 
-    /* ── SECTION ── */
-    .section { padding: 3rem 0; }
-    .section-title {
-      font-family: 'Fraunces', serif; font-weight: 600;
-      font-size: 1.9rem; margin-bottom: 1.6rem; letter-spacing: -0.01em;
-      display: flex; align-items: center; gap: 0.7rem;
-    }
-    .section-title::before {
-      content: ""; width: 34px; height: 5px; border-radius: 999px;
-      background: var(--grad-hero);
-    }
- 
-    .about-text p { color: var(--ink-muted); margin-bottom: 1rem; }
-    .about-text strong { color: var(--ink); font-weight: 700; }
-    .hl { padding: 0.05em 0.3em; border-radius: 5px; font-weight: 600; color: var(--ink); }
-    .hl-v { background: rgba(179,164,240,0.3); }
-    .hl-p { background: rgba(245,184,208,0.35); }
-    .hl-t { background: rgba(168,230,216,0.4); }
- 
-    /* ── PUBLICATIONS ── */
-    .pub-list { display: flex; flex-direction: column; gap: 1.1rem; }
-    .pub-card {
-      position: relative; background: var(--white);
-      border: 1px solid var(--rule); border-radius: 16px;
-      padding: 1.5rem 1.5rem 1.5rem 1.8rem; overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .pub-card::before {
-      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
-      background: var(--grad-violet);
-    }
-    .pub-card:nth-child(2)::before { background: var(--grad-pink); }
-    .pub-card:nth-child(3)::before { background: var(--grad-teal); }
-    .pub-card:nth-child(4)::before { background: var(--grad-amber); }
-    .pub-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(58,53,80,0.08); }
-    .pub-top {
-      display: flex; justify-content: space-between; align-items: flex-start;
-      gap: 0.8rem; margin-bottom: 0.5rem; flex-wrap: wrap;
-    }
-    .pub-title { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.1rem; line-height: 1.3; }
-    .pub-venue {
-      flex-shrink: 0; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em;
-      color: var(--ink); padding: 0.3rem 0.7rem; border-radius: 999px;
-      background: var(--grad-violet);
-    }
-    .pub-card:nth-child(2) .pub-venue { background: var(--grad-pink); }
-    .pub-card:nth-child(3) .pub-venue { background: var(--grad-teal); }
-    .pub-venue.under-review { background: #f2eff9; color: var(--ink-muted); }
-    .pub-authors { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 0.5rem; }
-    .pub-authors strong { color: var(--ink); font-weight: 700; }
-    .pub-desc { font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 0.6rem; }
-    .pub-meta { font-size: 0.78rem; color: var(--ink-faint); font-style: italic; }
-    .pub-links { display: flex; gap: 1.2rem; margin-top: 0.8rem; }
-    .pub-links a {
-      font-size: 0.82rem; font-weight: 700; color: var(--violet-deep); text-decoration: none;
-    }
-    .pub-links a:hover { text-decoration: underline; }
- 
-    /* ── EXPERIENCE ── */
-    .exp-list { position: relative; padding-left: 1.6rem; }
-    .exp-list::before {
-      content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 2px;
-      background: linear-gradient(var(--violet), var(--pink), var(--teal));
-    }
-    .exp-item { position: relative; padding: 0 0 1.6rem; }
-    .exp-item:last-child { padding-bottom: 0; }
-    .exp-item::before {
-      content: ""; position: absolute; left: -1.6rem; top: 6px;
-      width: 12px; height: 12px; border-radius: 50%;
-      background: var(--white); border: 3px solid var(--violet);
-      transform: translateX(-1px);
-    }
-    .exp-item:nth-child(2)::before { border-color: var(--pink); }
-    .exp-item:nth-child(3)::before { border-color: var(--coral); }
-    .exp-item:nth-child(4)::before { border-color: var(--teal); }
-    .exp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.3rem; }
-    .exp-org { font-weight: 700; font-size: 0.98rem; color: var(--violet-deep); }
-    .exp-date {
-      font-size: 0.74rem; font-weight: 600; color: var(--ink-muted);
-      background: #f4f0fb; padding: 0.15rem 0.6rem; border-radius: 999px;
-    }
-    .exp-role { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
-    .exp-role em { font-weight: 500; color: var(--violet-deep); font-size: 0.85rem; font-style: normal; }
-    .exp-points { list-style: none; display: flex; flex-direction: column; gap: 0.35rem; }
-    .exp-points li { font-size: 0.88rem; color: var(--ink-muted); padding-left: 1.2rem; position: relative; }
-    .exp-points li::before { content: "▸"; position: absolute; left: 0; color: var(--pink); }
- 
-    /* ── ACHIEVEMENTS ── */
-    .ach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
-    .ach-card {
-      position: relative; background: var(--white); border: 1px solid var(--rule);
-      border-radius: 16px; padding: 1.3rem; overflow: hidden;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .ach-card::after {
-      content: ""; position: absolute; top: -30px; right: -30px;
-      width: 80px; height: 80px; border-radius: 50%; opacity: 0.4;
-      background: var(--grad-violet);
-    }
-    .ach-card:nth-child(3n+2)::after { background: var(--grad-pink); }
-    .ach-card:nth-child(3n+3)::after { background: var(--grad-teal); }
-    .ach-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(58,53,80,0.08); }
-    .ach-badge {
-      display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em;
-      text-transform: uppercase; color: var(--ink); margin-bottom: 0.7rem;
-      padding: 0.2rem 0.6rem; border-radius: 999px; background: var(--grad-violet);
-    }
-    .ach-card:nth-child(3n+2) .ach-badge { background: var(--grad-pink); }
-    .ach-card:nth-child(3n+3) .ach-badge { background: var(--grad-teal); }
-    .ach-title { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.02rem; margin-bottom: 0.4rem; line-height: 1.25; }
-    .ach-desc { font-size: 0.85rem; color: var(--ink-muted); line-height: 1.55; }
- 
-    /* ── SKILLS ── */
-    .skills-body { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.4rem; }
-    .skill-group h3 {
-      font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em;
-      text-transform: uppercase; color: var(--violet-deep); margin-bottom: 0.7rem;
-    }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
-    .skill-tag {
-      font-size: 0.82rem; font-weight: 500; color: var(--ink-muted);
-      padding: 0.32rem 0.75rem; border-radius: 999px;
-      background: var(--white); border: 1px solid var(--rule);
-      transition: transform 0.15s, color 0.15s, border-color 0.15s;
-    }
-    .skill-tag:hover { transform: translateY(-2px); color: var(--violet-deep); border-color: var(--violet); }
- 
-    /* ── FOOTER ── */
-    footer {
-      margin-top: 2rem; padding: 3rem 1.5rem; text-align: center;
-      background: var(--grad-hero); color: var(--ink);
-    }
-    .footer-name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.4rem; }
-    .footer-contact { font-size: 0.85rem; opacity: 0.85; margin: 0.4rem 0 1.3rem; }
-    .footer-links { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; }
-    .footer-links a {
-      font-size: 0.85rem; font-weight: 600; color: var(--ink); text-decoration: none;
-      padding: 0.45rem 1rem; border-radius: 999px;
-      background: rgba(255,255,255,0.55); transition: background 0.2s;
-    }
-    .footer-links a:hover { background: rgba(255,255,255,0.85); }
- 
-    /* ── RESPONSIVE ── */
-    @media (max-width: 560px) {
-      body { font-size: 15px; }
-      .nav-links { gap: 1rem; }
-      .nav-links a { font-size: 0.8rem; }
-      .hero { padding: 2.75rem 1.25rem 2.5rem; }
-      .hero h1 { font-size: 2.3rem; }
-      .section-title { font-size: 1.6rem; }
-      .section { padding: 2.25rem 0; }
-    }
-    @media (max-width: 380px) {
-      .nav-links li:nth-child(3) { display: none; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aadya Arora</title>
+  
+  <!-- Corrected Google Fonts Import (Fixes the stylesheet crash) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #3a3550;
+      --ink-muted: #6d6885;
+      --ink-faint: #a9a5bd;
+      --bg: #fdfcff;
+      --white: #ffffff;
+      --rule: #f0ecf8;
+ 
+      --violet: #b3a4f0;
+      --violet-deep: #8f7ce0;
+      --pink: #f5b8d0;
+      --coral: #fcc6b0;
+      --amber: #ffe0a3;
+      --teal: #a8e6d8;
+      --sky: #b8dcf5;
+ 
+      --grad-hero: linear-gradient(135deg, #c9bdf5 0%, #f5c2d8 55%, #fcd4c0 100%);
+      --grad-violet: linear-gradient(135deg, #c4b6f5, #ddd3fb);
+      --grad-pink: linear-gradient(135deg, #f7c3d8, #fcdcc9);
+      --grad-teal: linear-gradient(135deg, #b3eadd, #c3e4f7);
+      --grad-amber: linear-gradient(135deg, #ffe4ad, #fcccb3);
+    }
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+ 
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+ 
+    a { color: inherit; }
+ 
+    .wrap { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
+ 
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(253,252,255,0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-inner {
+      display: flex; justify-content: space-between; align-items: center;
+      height: 60px; gap: 1rem; max-width: 760px; margin: 0 auto; padding: 0 1.5rem;
+    }
+    .nav-logo {
+      font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.15rem;
+      text-decoration: none;
+      background: var(--grad-hero); -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .nav-links { display: flex; gap: 1.4rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.85rem; font-weight: 600; color: var(--ink-muted);
+      text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--violet-deep); }
+ 
+    /* ── HERO ── */
+    .hero {
+      position: relative; text-align: center;
+      padding: 4rem 1.5rem 3.5rem; overflow: hidden;
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(201,189,245,0.35), transparent 42%),
+        radial-gradient(circle at 85% 15%, rgba(245,194,216,0.35), transparent 42%),
+        radial-gradient(circle at 50% 90%, rgba(179,234,221,0.3), transparent 45%);
+      z-index: -1;
+    }
+    .hero-photo-ring {
+      width: 138px; height: 138px; margin: 0 auto 1.5rem;
+      border-radius: 50%; padding: 4px;
+      background: var(--grad-hero);
+      box-shadow: 0 12px 34px rgba(179,164,240,0.4);
+    }
+    .hero-photo {
+      width: 100%; height: 100%; border-radius: 50%;
+      object-fit: cover; display: block; border: 4px solid var(--white);
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 3rem; line-height: 1.05; margin-bottom: 1.3rem;
+      letter-spacing: -0.02em;
+      background: var(--grad-hero); -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero-desc { color: var(--ink-muted); max-width: 540px; margin: 0 auto 1.6rem; }
+    .hero-desc strong { color: var(--ink); font-weight: 700; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--white); border: 1px solid var(--rule);
+      color: var(--ink); font-weight: 600; font-size: 0.85rem;
+      padding: 0.5rem 1rem; border-radius: 999px; margin-bottom: 2rem;
+      box-shadow: 0 6px 18px rgba(179,164,240,0.18);
+    }
+    .hero-badge::before {
+      content: ""; width: 9px; height: 9px; border-radius: 50%;
+      background: var(--grad-teal); box-shadow: 0 0 0 4px rgba(168,230,216,0.35);
+    }
+    .hero-links { display: flex; gap: 0.6rem; flex-wrap: wrap; justify-content: center; }
+    .hero-links a {
+      font-size: 0.85rem; font-weight: 600; color: var(--ink-muted);
+      text-decoration: none; padding: 0.5rem 1.1rem;
+      border: 1px solid var(--rule); border-radius: 999px; background: var(--white);
+      transition: transform 0.18s, color 0.18s, border-color 0.18s, box-shadow 0.18s;
+    }
+    .hero-links a:hover {
+      color: var(--violet-deep); border-color: var(--violet);
+      transform: translateY(-2px); box-shadow: 0 8px 18px rgba(179,164,240,0.25);
+    }
+ 
+    /* ── SECTION ── */
+    .section { padding: 3rem 0; }
+    .section-title {
+      font-family: 'Fraunces', serif; font-weight: 600;
+      font-size: 1.9rem; margin-bottom: 1.6rem; letter-spacing: -0.01em;
+      display: flex; align-items: center; gap: 0.7rem;
+    }
+    .section-title::before {
+      content: ""; width: 34px; height: 5px; border-radius: 999px;
+      background: var(--grad-hero);
+    }
+ 
+    .about-text p { color: var(--ink-muted); margin-bottom: 1rem; }
+    .about-text strong { color: var(--ink); font-weight: 700; }
+    .hl { padding: 0.05em 0.3em; border-radius: 5px; font-weight: 600; color: var(--ink); }
+    .hl-v { background: rgba(179,164,240,0.3); }
+    .hl-p { background: rgba(245,184,208,0.35); }
+    .hl-t { background: rgba(168,230,216,0.4); }
+ 
+    /* ── PUBLICATIONS ── */
+    .pub-list { display: flex; flex-direction: column; gap: 1.1rem; }
+    .pub-card {
+      position: relative; background: var(--white);
+      border: 1px solid var(--rule); border-radius: 16px;
+      padding: 1.5rem 1.5rem 1.5rem 1.8rem; overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pub-card::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
+      background: var(--grad-violet);
+    }
+    .pub-card:nth-child(2)::before { background: var(--grad-pink); }
+    .pub-card:nth-child(3)::before { background: var(--grad-teal); }
+    .pub-card:nth-child(4)::before { background: var(--grad-amber); }
+    .pub-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(58,53,80,0.08); }
+    .pub-top {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 0.8rem; margin-bottom: 0.5rem; flex-wrap: wrap;
+    }
+    .pub-title { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.1rem; line-height: 1.3; }
+    .pub-venue {
+      flex-shrink: 0; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.02em;
+      color: var(--ink); padding: 0.3rem 0.7rem; border-radius: 999px;
+      background: var(--grad-violet);
+    }
+    .pub-card:nth-child(2) .pub-venue { background: var(--grad-pink); }
+    .pub-card:nth-child(3) .pub-venue { background: var(--grad-teal); }
+    .pub-venue.under-review { background: #f2eff9; color: var(--ink-muted); }
+    .pub-authors { font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 0.5rem; }
+    .pub-authors strong { color: var(--ink); font-weight: 700; }
+    .pub-desc { font-size: 0.9rem; color: var(--ink-muted); margin-bottom: 0.6rem; }
+    .pub-meta { font-size: 0.78rem; color: var(--ink-faint); font-style: italic; }
+    .pub-links { display: flex; gap: 1.2rem; margin-top: 0.8rem; }
+    .pub-links a {
+      font-size: 0.82rem; font-weight: 700; color: var(--violet-deep); text-decoration: none;
+    }
+    .pub-links a:hover { text-decoration: underline; }
+ 
+    /* ── EXPERIENCE ── */
+    .exp-list { position: relative; padding-left: 1.6rem; }
+    .exp-list::before {
+      content: ""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 2px;
+      background: linear-gradient(var(--violet), var(--pink), var(--teal));
+    }
+    .exp-item { position: relative; padding: 0 0 1.6rem; }
+    .exp-item:last-child { padding-bottom: 0; }
+    .exp-item::before {
+      content: ""; position: absolute; left: -1.6rem; top: 6px;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--white); border: 3px solid var(--violet);
+      transform: translateX(-1px);
+    }
+    .exp-item:nth-child(2)::before { border-color: var(--pink); }
+    .exp-item:nth-child(3)::before { border-color: var(--coral); }
+    .exp-item:nth-child(4)::before { border-color: var(--teal); }
+    .exp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.3rem; }
+    .exp-org { font-weight: 700; font-size: 0.98rem; color: var(--violet-deep); }
+    .exp-date {
+      font-size: 0.74rem; font-weight: 600; color: var(--ink-muted);
+      background: #f4f0fb; padding: 0.15rem 0.6rem; border-radius: 999px;
+    }
+    .exp-role { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .exp-role em { font-weight: 500; color: var(--violet-deep); font-size: 0.85rem; font-style: normal; }
+    .exp-points { list-style: none; display: flex; flex-direction: column; gap: 0.35rem; }
+    .exp-points li { font-size: 0.88rem; color: var(--ink-muted); padding-left: 1.2rem; position: relative; }
+    .exp-points li::before { content: "▸"; position: absolute; left: 0; color: var(--pink); }
+ 
+    /* ── ACHIEVEMENTS ── */
+    .ach-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+    .ach-card {
+      position: relative; background: var(--white); border: 1px solid var(--rule);
+      border-radius: 16px; padding: 1.3rem; overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ach-card::after {
+      content: ""; position: absolute; top: -30px; right: -30px;
+      width: 80px; height: 80px; border-radius: 50%; opacity: 0.4;
+      background: var(--grad-violet);
+    }
+    .ach-card:nth-child(3n+2)::after { background: var(--grad-pink); }
+    .ach-card:nth-child(3n+3)::after { background: var(--grad-teal); }
+    .ach-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(58,53,80,0.08); }
+    .ach-badge {
+      display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em;
+      text-transform: uppercase; color: var(--ink); margin-bottom: 0.7rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; background: var(--grad-violet);
+    }
+    .ach-card:nth-child(3n+2) .ach-badge { background: var(--grad-pink); }
+    .ach-card:nth-child(3n+3) .ach-badge { background: var(--grad-teal); }
+    .ach-title { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.02rem; margin-bottom: 0.4rem; line-height: 1.25; }
+    .ach-desc { font-size: 0.85rem; color: var(--ink-muted); line-height: 1.55; }
+ 
+    /* ── SKILLS ── */
+    .skills-body { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.4rem; }
+    .skill-group h3 {
+      font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--violet-deep); margin-bottom: 0.7rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+    .skill-tag {
+      font-size: 0.82rem; font-weight: 500; color: var(--ink-muted);
+      padding: 0.32rem 0.75rem; border-radius: 999px;
+      background: var(--white); border: 1px solid var(--rule);
+      transition: transform 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .skill-tag:hover { transform: translateY(-2px); color: var(--violet-deep); border-color: var(--violet); }
+ 
+    /* ── FOOTER ── */
+    footer {
+      margin-top: 2rem; padding: 3rem 1.5rem; text-align: center;
+      background: var(--grad-hero); color: var(--ink);
+    }
+    .footer-name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.4rem; }
+    .footer-contact { font-size: 0.85rem; opacity: 0.85; margin: 0.4rem 0 1.3rem; }
+    .footer-links { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; }
+    .footer-links a {
+      font-size: 0.85rem; font-weight: 600; color: var(--ink); text-decoration: none;
+      padding: 0.45rem 1rem; border-radius: 999px;
+      background: rgba(255,255,255,0.55); transition: background 0.2s;
+    }
+    .footer-links a:hover { background: rgba(255,255,255,0.85); }
+ 
+    /* ── RESPONSIVE ── */
+    @media (max-width: 560px) {
+      body { font-size: 15px; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: 0.8rem; }
+      .hero { padding: 2.75rem 1.25rem 2.5rem; }
+      .hero h1 { font-size: 2.3rem; }
+      .section-title { font-size: 1.6rem; }
+      .section { padding: 2.25rem 0; }
+    }
+    @media (max-width: 380px) {
+      .nav-links li:nth-child(3) { display: none; }
+    }
+  </style>
 </head>
 <body>
- 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">Aadya Arora</a>
-      <ul class="nav-links">
-        <li><a href="#publications">Research</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#achievements">Awards</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
- 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-photo-ring">
-      <img
-        class="hero-photo"
-        src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/aadya.jpg"
-        alt="Aadya Arora"
-      >
-    </div>
-    <h1>Aadya Arora</h1>
-    <p class="hero-desc">
-      Data Scientist at <strong>Microsoft</strong>. My research sits at the intersection of
-      vision-language models, medical imaging, and generative AI, building efficient and
-      interpretable systems for real-world healthcare.
-    </p>
-    <div class="hero-badge">Incoming PhD · Johns Hopkins University (EECS) · Medical AI</div>
-    <div class="hero-links">
-      <a href="mailto:aadya.arora@iitgn.ac.in">Email</a>
-      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">Scholar</a>
-      <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/aadya-arora/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/22110002.pdf" target="_blank">CV</a>
-    </div>
-  </header>
- 
-  <!-- ABOUT -->
-  <section class="wrap section" id="about">
-  <h2 class="section-title">About</h2>
-  <div class="about-text">
-    <p>
-      If you've ever used <strong>PowerPoint Copilot</strong> to clean up a messy slide, there’s a small chance you've run into some of my work[cite: 1]. 
-      I was involved as a <strong>Data Scientist</strong> on that team at <strong>Microsoft</strong>[cite: 1]. Before that, I completed my undergrad 
-      at <strong>IIT Gandhinagar</strong>[cite: 1].
+ 
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Aadya Arora</a>
+      <ul class="nav-links">
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-photo-ring">
+      <img
+        class="hero-photo"
+        src="https://raw.githubusercontent.com/AADYA-ARORA/aadya-arora.github.io/main/aadya.jpg"
+        alt="Aadya Arora"
+      >
+    </div>
+    <h1>Aadya Arora</h1>
+    <p class="hero-desc">
+      Data Scientist at <strong>Microsoft</strong>. My research sits at the intersection of
+      vision-language models, medical imaging, and generative AI, building efficient and
+      interpretable systems for real-world healthcare[cite: 1, 2].
     </p>
-    <p>
-      During my time there, I got to work on some exciting research[cite: 1]. My work focused on 
-      <span class="hl hl-v">vision-language models</span>[cite: 1], 
-      <span class="hl hl-p">diffusion-based generative AI</span>[cite: 1], and 
-      <span class="hl hl-t">few-shot medical image classification</span>[cite: 1]. Through research internships at 
-      <strong>IISc Bangalore</strong>, the <strong>University of Bath</strong>, and <strong>IIIT Hyderabad</strong>, I gained experience 
-      with diffusion transformers, attention-based image editing, and anomaly detection in autonomous driving[cite: 1].
-    </p>
-    <p>
-      But right now, I’m taking a big step that I have been incredibly eager to start: my PhD at 
-      <strong>Johns Hopkins University</strong>, where I am fortunate to be advised by <strong>Prof. Vishal Patel</strong>[cite: 1]. 
-      I'm genuinely excited to jump into research and see where this next chapter takes me.
-    </p>
-    <p>
-      Thanks for stopping by! Feel free to look around or reach out if you'd like to say hi.
-    </p>
-  </div>
-</section>
- 
-  <!-- PUBLICATIONS -->
-  <section class="wrap section" id="publications">
-    <h2 class="section-title">Publications</h2>
-    <div class="pub-list">
- 
-      <div class="pub-card">
-        <div class="pub-top">
-          <div class="pub-title">MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets using Pixel-Wise Attention</div>
-          <div class="pub-venue">IEEE ICASSP 2025</div>
-        </div>
-        <p class="pub-authors"><strong>A. Arora</strong>, V. Namboodiri</p>
-        <p class="pub-desc">Integrated SAM-based pixel attention with CLIP for interpretable and robust few-shot medical image classification.</p>
-        <p class="pub-meta">Flagship IEEE SPS Conference · CORE A · h5-index: 110</p>
-        <div class="pub-links">
-          <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">ArXiv →</a>
-          <a href="https://github.com/AADYA-ARORA" target="_blank">Code →</a>
-        </div>
-      </div>
- 
-      <div class="pub-card">
-        <div class="pub-top">
-          <div class="pub-title">WavShadow: Wavelet-Based Shadow Segmentation and Removal</div>
-          <div class="pub-venue">ICVGIP 2024</div>
-        </div>
-        <p class="pub-authors">S. Jain*, <strong>A. Arora*</strong>, V. Vekaria, K. Gandhi, S. Raman <em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em></p>
-        <p class="pub-desc">Wavelet-enhanced pipeline for shadow detection and removal, combining frequency-domain analysis with deep learning.</p>
-        <p class="pub-meta">Premier Indian Conference in Computer Vision · h5-index: 18</p>
-        <div class="pub-links">
-          <a href="#" target="_blank">ArXiv →</a>
-        </div>
-      </div>
- 
-      <div class="pub-card">
-        <div class="pub-top">
-          <div class="pub-title">TEMPEST: A Machine Learning Framework for Battery Thermal Prediction and Chemistry Selection</div>
-          <div class="pub-venue">IEEE TIA 2026</div>
-        </div>
-        <p class="pub-authors"><strong>A. Arora*</strong>, S. Patil*, P. Bhardwaj <em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em></p>
-        <p class="pub-desc">LSTM-based framework for predicting internal battery temperature and recommending optimal chemistry for EV and grid storage.</p>
-        <p class="pub-meta">Q1 Journal · Impact Factor: 4.4 · h5-index: 78</p>
-        <div class="pub-links">
-          <a href="https://github.com/AADYA-ARORA/EE499" target="_blank">IEEEXplore →</a>
-          <a href="https://github.com/AADYA-ARORA/EE499" target="_blank">Code →</a>
-        </div>
-      </div>
- 
-      <div class="pub-card">
-        <div class="pub-top">
-          <div class="pub-title">Battery ETHOS: Electro-Thermal Model for State Estimation</div>
-          <div class="pub-venue under-review">Under Review · IEEE COMPEL 2026</div>
-        </div>
-        <p class="pub-authors">S. Patil*, <strong>A. Arora*</strong>, P. Bhardwaj <em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em></p>
-        <p class="pub-desc">Electro-thermal modelling approach for accurate battery state estimation, extending the TEMPEST framework.</p>
-        <p class="pub-meta">Q2 Journal · Impact Factor: 1.5 · h5-index: 25</p>
-        <div class="pub-links">
-          <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub →</a>
-        </div>
-      </div>
- 
-    </div>
-  </section>
- 
-  <!-- EXPERIENCE -->
-  <section class="wrap section" id="experience">
-    <h2 class="section-title">Experience</h2>
-    <div class="exp-list">
- 
-      <div class="exp-item">
-        <div class="exp-head">
-          <span class="exp-org">Microsoft IDC</span>
-          <span class="exp-date">May – July 2024</span>
-        </div>
-        <p class="exp-role">Data Scientist Intern <em>· Received Full-Time PPO</em></p>
-        <ul class="exp-points">
-          <li>Worked with the Copilot team for PowerPoint; integrated AI to improve structured presentation creation.</li>
-          <li>Built datasets by extracting and structuring text & formatting info from slides in JSON format.</li>
-          <li>Developed data pipelines to generate diverse formatting examples; improved model performance through error analysis, leading to a PPO.</li>
-        </ul>
-      </div>
- 
-      <div class="exp-item">
-        <div class="exp-head">
-          <span class="exp-org">IISc Bangalore · VAL Lab</span>
-          <span class="exp-date">Dec 2024 – Apr 2025</span>
-        </div>
-        <p class="exp-role">Research Intern — Diffusion Transformers</p>
-        <ul class="exp-points">
-          <li>Layer-wise ablation of Diffusion Image Transformers (DiTs); studied how features evolve for structure vs. style.</li>
-          <li>Designed unified attention masks to reduce prompt leakage in multi-region text-to-image generation.</li>
-          <li>Ran LoRA and DreamBooth experiments to understand editing behaviour at different transformer depths.</li>
-        </ul>
-      </div>
- 
-      <div class="exp-item">
-        <div class="exp-head">
-          <span class="exp-org">University of Bath</span>
-          <span class="exp-date">May – July 2024</span>
-        </div>
-        <p class="exp-role">Research Intern — Vision-Language Models</p>
-        <ul class="exp-points">
-          <li>Developed AdaptHIPIE: lightweight adapters into HIPIE for open-vocabulary referring segmentation.</li>
-          <li>Achieved 85.15 mIoU on RefCOCO, improving visual-text alignment with CLIP features.</li>
-          <li>Concurrently developed MedFocusCLIP, rethinking annotation-efficient methods for the medical domain.</li>
-        </ul>
-      </div>
- 
-      <div class="exp-item">
-        <div class="exp-head">
-          <span class="exp-org">IIIT Hyderabad · CVIT Lab</span>
-          <span class="exp-date">Dec 2023 – Jan 2024</span>
-        </div>
-        <p class="exp-role">Research Intern — Autonomous Driving</p>
-        <ul class="exp-points">
-          <li>Analysed corner cases in Indian traffic datasets (IDD, CODA) for unstructured environments.</li>
-          <li>Used class-agnostic RPNs to capture anomalous instances beyond predefined categories.</li>
-          <li>Built a pipeline using semantic segmentation & common-class suppression to surface safety-critical anomalies.</li>
-        </ul>
-      </div>
- 
-    </div>
-  </section>
- 
-  <!-- ACHIEVEMENTS -->
-  <section class="wrap section" id="achievements">
-    <h2 class="section-title">Achievements</h2>
-    <div class="ach-grid">
- 
-      <div class="ach-card">
-        <div class="ach-badge">PhD Offer</div>
-        <div class="ach-title">Johns Hopkins University</div>
-        <p class="ach-desc">Fully funded PhD position in EECS to specialise in Medical AI.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Industry</div>
-        <div class="ach-title">Microsoft PPO — Data Scientist</div>
-        <p class="ach-desc">Full-time Pre-Placement Offer at Microsoft IDC with the highest compensation in a tech role from IITGN.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Publication</div>
-        <div class="ach-title">ICASSP 2025 · Cash Prize</div>
-        <p class="ach-desc">Only B.Tech student in the batch to publish at IEEE's flagship SPS conference. Awarded ₹25k by IITGN.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Service</div>
-        <div class="ach-title">IEEE Reviewer</div>
-        <p class="ach-desc">Official reviewer for IEEE Signal Processing Letters (2025–present); 4 technical peer-reviews to date.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Invitation</div>
-        <div class="ach-title">Microsoft Research India Summit 2025</div>
-        <p class="ach-desc">One of few students nationwide selected for India's premier annual AI academic summit.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Competition</div>
-        <div class="ach-title">Inter-IIT Tech Meet — Top 3</div>
-        <p class="ach-desc">Ranked Top 3 for Research Paper Poster across all 23 IITs in EE and CSE domains.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Teaching</div>
-        <div class="ach-title">Teaching Assistant × 3 Courses</div>
-        <p class="ach-desc">TA for Machine Learning, Probability & Data Visualization, and Principles of EE.</p>
-      </div>
- 
-      <div class="ach-card">
-        <div class="ach-badge">Outreach</div>
-        <div class="ach-title">Featured in Quill Magazine</div>
-        <p class="ach-desc">Featured in the April 2026 edition; Problem Statement Setter for IITGN's flagship HackRush '26.</p>
-      </div>
- 
-    </div>
-  </section>
- 
-  <!-- SKILLS -->
-  <section class="wrap section" id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-body">
-      <div class="skill-group">
-        <h3>Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">MATLAB</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Deep Learning</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">CNNs</span>
-          <span class="skill-tag">ViTs</span>
-          <span class="skill-tag">CLIP</span>
-          <span class="skill-tag">Diffusion</span>
-          <span class="skill-tag">SAM</span>
-          <span class="skill-tag">LSTMs</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Frameworks</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">OpenCV</span>
-          <span class="skill-tag">mmDetection</span>
-          <span class="skill-tag">Azure OpenAI</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Domains</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Computer Vision</span>
-          <span class="skill-tag">Medical Imaging</span>
-          <span class="skill-tag">Generative AI</span>
-          <span class="skill-tag">Document AI</span>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-  <!-- FOOTER -->
-  <footer id="contact">
-    <div class="footer-name">Let's connect</div>
-    <div class="footer-contact">aadya.arora@iitgn.ac.in · +91-9310499169</div>
-    <div class="footer-links">
-      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">Scholar</a>
-      <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/aadya-arora-069253259/" target="_blank">LinkedIn</a>
-      <a href="https://aadya-arora.github.io/" target="_blank">Website</a>
-    </div>
-  </footer>
- 
+    <div class="hero-badge">Incoming PhD · Johns Hopkins University (EECS) · Medical AI[cite: 1]</div>
+    <div class="hero-links">
+      <a href="mailto:aadya.arora@iitgn.ac.in">Email</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">Scholar</a>
+      <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/aadya-arora/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/AADYA-ARORA/aadya-arora.github.io/blob/main/22110002.pdf" target="_blank">CV</a>
+    </div>
+  </header>
+ 
+  <!-- ABOUT (Cleaned up, human-toned and styled beautifully) -->
+  <section class="wrap section" id="about">
+    <h2 class="section-title">About</h2>
+    <div class="about-text">
+      <p>
+        If you've ever used <strong>PowerPoint Copilot</strong> to clean up a messy slide, there’s a small chance you've run into some of my work[cite: 1]. 
+        I was involved as a <strong>Data Scientist</strong> on that team at <strong>Microsoft</strong>[cite: 1, 2]. Before that, I completed my undergrad 
+        at <strong>IIT Gandhinagar</strong>[cite: 1].
+      </p>
+      <p>
+        During my time there, I got to work on some exciting research[cite: 1, 2]. My work focused on 
+        <span class="hl hl-v">vision-language models</span>[cite: 2], 
+        <span class="hl hl-p">diffusion-based generative AI</span>[cite: 2], and 
+        <span class="hl hl-t">few-shot medical image classification</span>[cite: 2]. Through research internships at 
+        <strong>IISc Bangalore</strong>, the <strong>University of Bath</strong>, and <strong>IIIT Hyderabad</strong>, I gained experience 
+        with diffusion transformers, attention-based image editing, and anomaly detection in autonomous driving[cite: 2].
+      </p>
+      <p>
+        But right now, I’m taking a big step that I have been incredibly eager to start: my PhD at 
+        <strong>Johns Hopkins University</strong>, where I am fortunate to be advised by <strong>Prof. Vishal Patel</strong>[cite: 1]. 
+        I'm genuinely excited to jump into research and see where this next chapter takes me.
+      </p>
+      <p>
+        Thanks for stopping by! Feel free to look around or reach out if you'd like to say hi.
+      </p>
+    </div>
+  </section>
+ 
+  <!-- PUBLICATIONS -->
+  <section class="wrap section" id="publications">
+    <h2 class="section-title">Publications</h2>
+    <div class="pub-list">
+ 
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">MedFocusCLIP: Improving Few-Shot Classification in Medical Datasets using Pixel-Wise Attention</div>
+          <div class="pub-venue">IEEE ICASSP 2025</div>
+        </div>
+        <p class="pub-authors"><strong>A. Arora</strong>, V. Namboodiri[cite: 1]</p>
+        <p class="pub-desc">Integrated SAM-based pixel attention with CLIP for interpretable and robust few-shot medical image classification[cite: 2].</p>
+        <p class="pub-meta">Flagship IEEE SPS Conference · CORE A · h5-index: 110[cite: 1]</p>
+        <div class="pub-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">ArXiv →</a>
+          <a href="https://github.com/AADYA-ARORA" target="_blank">Code →</a>
+        </div>
+      </div>
+ 
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">WavShadow: Wavelet-Based Shadow Segmentation and Removal</div>
+          <div class="pub-venue">ICVGIP 2024</div>
+        </div>
+        <p class="pub-authors">S. Jain*, <strong>A. Arora*</strong>, V. Vekaria, K. Gandhi, S. Raman <em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em>[cite: 2]</p>
+        <p class="pub-desc">Wavelet-enhanced pipeline for shadow detection and removal, combining frequency-domain analysis with deep learning[cite: 2].</p>
+        <p class="pub-meta">Premier Indian Conference in Computer Vision · h5-index: 18[cite: 1]</p>
+        <div class="pub-links">
+          <a href="#" target="_blank">ArXiv →</a>
+        </div>
+      </div>
+ 
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">TEMPEST: A Machine Learning Framework for Battery Thermal Prediction and Chemistry Selection</div>
+          <div class="pub-venue">IEEE TIA 2026</div>
+        </div>
+        <p class="pub-authors"><strong>A. Arora*</strong>, S. Patil*, P. Bhardwaj <em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em>[cite: 1]</p>
+        <p class="pub-desc">LSTM-based framework for predicting internal battery temperature and recommending optimal chemistry for EV and grid storage[cite: 2].</p>
+        <p class="pub-meta">Q1 Journal · Impact Factor: 4.4 · h5-index: 78[cite: 1]</p>
+        <div class="pub-links">
+          <a href="https://github.com/AADYA-ARORA/EE499" target="_blank">IEEEXplore →</a>
+          <a href="https://github.com/AADYA-ARORA/EE499" target="_blank">Code →</a>
+        </div>
+      </div>
+ 
+      <div class="pub-card">
+        <div class="pub-top">
+          <div class="pub-title">Battery ETHOS: Electro-Thermal Model for State Estimation</div>
+          <div class="pub-venue">Under Review · IEEE COMPEL 2026</div>
+        </div>
+        <p class="pub-authors">S. Patil*, <strong>A. Arora*</strong>, P. Bhardwaj <em style="font-size:0.8rem;color:var(--ink-faint)">(*Equal Contribution)</em>[cite: 1]</p>
+        <p class="pub-desc">Electro-thermal modelling approach for accurate battery state estimation, extending the TEMPEST framework[cite: 2].</p>
+        <p class="pub-meta">Q2 Journal · Impact Factor: 1.5 · h5-index: 25[cite: 1]</p>
+        <div class="pub-links">
+          <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub →</a>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- EXPERIENCE -->
+  <section class="wrap section" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-list">
+ 
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-org">Microsoft IDC</span>
+          <span class="exp-date">May – July 2024</span>
+        </div>
+        <p class="exp-role">Data Scientist Intern <em>· Received Full-Time PPO</em>[cite: 1, 2]</p>
+        <ul class="exp-points">
+          <li>Worked with the Copilot team for PowerPoint; integrated AI to improve structured presentation creation[cite: 2].</li>
+          <li>Built datasets by extracting and structuring text & formatting info from slides in JSON format[cite: 2].</li>
+          <li>Developed data pipelines to generate diverse formatting examples; improved model performance through error analysis, leading to a PPO[cite: 2].</li>
+        </ul>
+      </div>
+ 
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-org">IISc Bangalore · VAL Lab</span>
+          <span class="exp-date">Dec 2024 – Apr 2025</span>
+        </div>
+        <p class="exp-role">Research Intern — Diffusion Transformers[cite: 1, 2]</p>
+        <ul class="exp-points">
+          <li>Layer-wise ablation of Diffusion Image Transformers (DiTs); studied how features evolve for structure vs. style[cite: 2].</li>
+          <li>Designed unified attention masks to reduce prompt leakage in multi-region text-to-image generation[cite: 2].</li>
+          <li>Ran LoRA and DreamBooth experiments to understand editing behaviour at different transformer depths[cite: 2].</li>
+        </ul>
+      </div>
+ 
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-org">University of Bath</span>
+          <span class="exp-date">May – July 2024</span>
+        </div>
+        <p class="exp-role">Research Intern — Vision-Language Models[cite: 1, 2]</p>
+        <ul class="exp-points">
+          <li>Developed AdaptHIPIE: lightweight adapters into HIPIE for open-vocabulary referring segmentation[cite: 2].</li>
+          <li>Achieved 85.15 mIoU on RefCOCO, improving visual-text alignment with CLIP features[cite: 2].</li>
+          <li>Concurrently developed MedFocusCLIP, rethinking annotation-efficient methods for the medical domain[cite: 2].</li>
+        </ul>
+      </div>
+ 
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-org">IIIT Hyderabad · CVIT Lab</span>
+          <span class="exp-date">Dec 2023 – Jan 2024</span>
+        </div>
+        <p class="exp-role">Research Intern — Autonomous Driving[cite: 1, 2]</p>
+        <ul class="exp-points">
+          <li>Analysed corner cases in Indian traffic datasets (IDD, CODA) for unstructured environments[cite: 2].</li>
+          <li>Used class-agnostic RPNs to capture anomalous instances beyond predefined categories[cite: 2].</li>
+          <li>Built a pipeline using semantic segmentation & common-class suppression to surface safety-critical anomalies[cite: 2].</li>
+        </ul>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ACHIEVEMENTS -->
+  <section class="wrap section" id="achievements">
+    <h2 class="section-title">Achievements</h2>
+    <div class="ach-grid">
+ 
+      <div class="ach-card">
+        <div class="ach-badge">PhD Offer</div>
+        <div class="ach-title">Johns Hopkins University</div>
+        <p class="ach-desc">Fully funded PhD position in EECS to specialise in Medical AI[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Industry</div>
+        <div class="ach-title">Microsoft PPO — Data Scientist</div>
+        <p class="ach-desc">Full-time Pre-Placement Offer at Microsoft IDC with the highest compensation in a tech role from IITGN[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Publication</div>
+        <div class="ach-title">ICASSP 2025 · Cash Prize</div>
+        <p class="ach-desc">Only B.Tech student in the batch to publish at IEEE's flagship SPS conference. Awarded ₹25k by IITGN[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Service</div>
+        <div class="ach-title">IEEE Reviewer</div>
+        <p class="ach-desc">Official reviewer for IEEE Signal Processing Letters (2025–present); 4 technical peer-reviews to date[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Invitation</div>
+        <div class="ach-title">Microsoft Research India Summit 2025</div>
+        <p class="ach-desc">One of few students nationwide selected for India's premier annual AI academic summit[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Competition</div>
+        <div class="ach-title">Inter-IIT Tech Meet — Top 3</div>
+        <p class="ach-desc">Ranked Top 3 for Research Paper Poster across all 23 IITs in EE and CSE domains[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Teaching</div>
+        <div class="ach-title">Teaching Assistant × 3 Courses</div>
+        <p class="ach-desc">TA for Machine Learning, Probability & Data Visualization, and Principles of EE[cite: 1].</p>
+      </div>
+ 
+      <div class="ach-card">
+        <div class="ach-badge">Outreach</div>
+        <div class="ach-title">Featured in Quill Magazine</div>
+        <p class="ach-desc">Featured in the April 2026 edition; Problem Statement Setter for IITGN's flagship HackRush '26[cite: 1].</p>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- SKILLS -->
+  <section class="wrap section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-body">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">MATLAB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Deep Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">CNNs</span>
+          <span class="skill-tag">ViTs</span>
+          <span class="skill-tag">CLIP</span>
+          <span class="skill-tag">Diffusion</span>
+          <span class="skill-tag">SAM</span>
+          <span class="skill-tag">LSTMs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">mmDetection</span>
+          <span class="skill-tag">Azure OpenAI</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Domains</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Medical Imaging</span>
+          <span class="skill-tag">Generative AI</span>
+          <span class="skill-tag">Document AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-name">Let's connect</div>
+    <div class="footer-contact">aadya.arora@iitgn.ac.in · +91-9310499169[cite: 1]</div>
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?hl=en&user=_mG0F4IAAAAJ" target="_blank">Scholar</a>
+      <a href="https://github.com/AADYA-ARORA" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/aadya-arora-069253259/" target="_blank">LinkedIn</a>
+      <a href="https://aadya-arora.github.io/" target="_blank">Website</a>
+    </div>
+  </footer>
+ 
 </body>
 </html>
